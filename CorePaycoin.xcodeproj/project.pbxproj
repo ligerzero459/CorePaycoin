@@ -1,0 +1,2439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20148AE018355D7200E68E9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D2802517B8FE00004A462B /* Foundation.framework */; };
+		20148C0A1835638200E68E9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20148C081835638200E68E9C /* InfoPlist.strings */; };
+		20148C411835651C00E68E9C /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		20148C9C183643AB00E68E9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20148B3718355F0100E68E9C /* Cocoa.framework */; };
+		20148CEB1836446500E68E9C /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		206B011F183547C200878B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 206B011D183547C200878B8D /* InfoPlist.strings */; };
+		206B016A1835487700878B8D /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		2084DD5E17B8FF47005AC9E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D2802517B8FE00004A462B /* Foundation.framework */; };
+		2084DD6117B8FF47005AC9E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084DD6017B8FF47005AC9E6 /* main.m */; };
+		2084DD9817B8FFA2005AC9E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2084DD9617B8FFA2005AC9E6 /* Security.framework */; };
+		209F27C11AE538F80092A1FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2084DD9617B8FFA2005AC9E6 /* Security.framework */; };
+		20C0DDB2183BC5E100A9EED0 /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */; };
+		20C0DDB3183BC5E100A9EED0 /* libssl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */; };
+		20C0DDB4183BC5E200A9EED0 /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */; };
+		20C0DDB5183BC5E200A9EED0 /* libssl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */; };
+		20C0DDB6183BC5E900A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDB7183BC5E900A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C0DDB8183BC5EA00A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDB9183BC5EA00A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C0DDBA183BC5EB00A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDBB183BC5EB00A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C3F16917BFDCF8009DB89C /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C3F16817BFDCF8009DB89C /* libSystem.dylib */; };
+		20D09BA118BA14F900794209 /* CorePaycoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09B9F18BA14F900794209 /* CorePaycoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D09BA218BA14F900794209 /* CorePaycoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09B9F18BA14F900794209 /* CorePaycoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D09BA318BA14F900794209 /* CorePaycoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09B9F18BA14F900794209 /* CorePaycoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D09BA418BA14F900794209 /* CorePaycoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09BA018BA14F900794209 /* CorePaycoin+Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D09BA518BA14F900794209 /* CorePaycoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09BA018BA14F900794209 /* CorePaycoin+Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D09BA618BA14F900794209 /* CorePaycoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D09BA018BA14F900794209 /* CorePaycoin+Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757B241B1B03F1BF0084A9DE /* CorePaycoinOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B0113183547C200878B8D /* CorePaycoinOSX.framework */; };
+		FFDBB6E61C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E51C08CAE10040D344 /* XPYUnitsAndLimits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB6E71C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E51C08CAE10040D344 /* XPYUnitsAndLimits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB6E81C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E51C08CAE10040D344 /* XPYUnitsAndLimits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB6EB1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E91C08CAFB0040D344 /* XPYBlockHeader.h */; };
+		FFDBB6EC1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E91C08CAFB0040D344 /* XPYBlockHeader.h */; };
+		FFDBB6ED1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6E91C08CAFB0040D344 /* XPYBlockHeader.h */; };
+		FFDBB6EE1C08CAFB0040D344 /* XPYBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */; };
+		FFDBB6EF1C08CAFB0040D344 /* XPYBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */; };
+		FFDBB6F01C08CAFB0040D344 /* XPYBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */; };
+		FFDBB6F11C08CAFB0040D344 /* XPYBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */; };
+		FFDBB6F51C08CB030040D344 /* XPYBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6F31C08CB030040D344 /* XPYBlock.h */; };
+		FFDBB6F61C08CB030040D344 /* XPYBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6F31C08CB030040D344 /* XPYBlock.h */; };
+		FFDBB6F71C08CB030040D344 /* XPYBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6F31C08CB030040D344 /* XPYBlock.h */; };
+		FFDBB6F81C08CB030040D344 /* XPYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6F41C08CB030040D344 /* XPYBlock.m */; };
+		FFDBB6F91C08CB030040D344 /* XPYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6F41C08CB030040D344 /* XPYBlock.m */; };
+		FFDBB6FA1C08CB030040D344 /* XPYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6F41C08CB030040D344 /* XPYBlock.m */; };
+		FFDBB6FB1C08CB030040D344 /* XPYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6F41C08CB030040D344 /* XPYBlock.m */; };
+		FFDBB6FF1C08CB1F0040D344 /* XPYMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6FD1C08CB1F0040D344 /* XPYMerkleTree.h */; };
+		FFDBB7001C08CB1F0040D344 /* XPYMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6FD1C08CB1F0040D344 /* XPYMerkleTree.h */; };
+		FFDBB7011C08CB1F0040D344 /* XPYMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB6FD1C08CB1F0040D344 /* XPYMerkleTree.h */; };
+		FFDBB7021C08CB1F0040D344 /* XPYMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */; };
+		FFDBB7031C08CB1F0040D344 /* XPYMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */; };
+		FFDBB7041C08CB1F0040D344 /* XPYMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */; };
+		FFDBB7051C08CB1F0040D344 /* XPYMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */; };
+		FFDBB7131C08CB350040D344 /* XPYOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7111C08CB350040D344 /* XPYOpcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7141C08CB350040D344 /* XPYOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7111C08CB350040D344 /* XPYOpcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7151C08CB350040D344 /* XPYOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7111C08CB350040D344 /* XPYOpcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7161C08CB350040D344 /* XPYOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7121C08CB350040D344 /* XPYOpcode.m */; };
+		FFDBB7171C08CB350040D344 /* XPYOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7121C08CB350040D344 /* XPYOpcode.m */; };
+		FFDBB7181C08CB350040D344 /* XPYOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7121C08CB350040D344 /* XPYOpcode.m */; };
+		FFDBB7191C08CB350040D344 /* XPYOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7121C08CB350040D344 /* XPYOpcode.m */; };
+		FFDBB71D1C08CB450040D344 /* XPYScript.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB71B1C08CB450040D344 /* XPYScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB71E1C08CB450040D344 /* XPYScript.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB71B1C08CB450040D344 /* XPYScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB71F1C08CB450040D344 /* XPYScript.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB71B1C08CB450040D344 /* XPYScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7201C08CB450040D344 /* XPYScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB71C1C08CB450040D344 /* XPYScript.m */; };
+		FFDBB7211C08CB450040D344 /* XPYScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB71C1C08CB450040D344 /* XPYScript.m */; };
+		FFDBB7221C08CB450040D344 /* XPYScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB71C1C08CB450040D344 /* XPYScript.m */; };
+		FFDBB7231C08CB450040D344 /* XPYScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB71C1C08CB450040D344 /* XPYScript.m */; };
+		FFDBB7271C08CB510040D344 /* XPYScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7251C08CB510040D344 /* XPYScriptMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7281C08CB510040D344 /* XPYScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7251C08CB510040D344 /* XPYScriptMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7291C08CB510040D344 /* XPYScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7251C08CB510040D344 /* XPYScriptMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB72A1C08CB510040D344 /* XPYScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */; };
+		FFDBB72B1C08CB510040D344 /* XPYScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */; };
+		FFDBB72C1C08CB510040D344 /* XPYScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */; };
+		FFDBB72D1C08CB510040D344 /* XPYScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */; };
+		FFDBB7311C08CB650040D344 /* XPYScript+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB72F1C08CB650040D344 /* XPYScript+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7321C08CB650040D344 /* XPYScript+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB72F1C08CB650040D344 /* XPYScript+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7331C08CB650040D344 /* XPYScript+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB72F1C08CB650040D344 /* XPYScript+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB73A1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7391C08CB7A0040D344 /* XPYSignatureHashType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB73B1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7391C08CB7A0040D344 /* XPYSignatureHashType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB73C1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7391C08CB7A0040D344 /* XPYSignatureHashType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB73F1C08CB8C0040D344 /* XPYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB73D1C08CB8C0040D344 /* XPYTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7401C08CB8C0040D344 /* XPYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB73D1C08CB8C0040D344 /* XPYTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7411C08CB8C0040D344 /* XPYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB73D1C08CB8C0040D344 /* XPYTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7421C08CB8C0040D344 /* XPYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */; };
+		FFDBB7431C08CB8C0040D344 /* XPYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */; };
+		FFDBB7441C08CB8C0040D344 /* XPYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */; };
+		FFDBB74F1C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB74D1C08CB9F0040D344 /* XPYTransactionBuilder.h */; };
+		FFDBB7501C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB74D1C08CB9F0040D344 /* XPYTransactionBuilder.h */; };
+		FFDBB7511C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB74D1C08CB9F0040D344 /* XPYTransactionBuilder.h */; };
+		FFDBB7521C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */; };
+		FFDBB7531C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */; };
+		FFDBB7541C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */; };
+		FFDBB7551C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */; };
+		FFDBB7591C08CBAB0040D344 /* XPYTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7571C08CBAB0040D344 /* XPYTransactionInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB75A1C08CBAB0040D344 /* XPYTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7571C08CBAB0040D344 /* XPYTransactionInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB75B1C08CBAB0040D344 /* XPYTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7571C08CBAB0040D344 /* XPYTransactionInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB75C1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */; };
+		FFDBB75D1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */; };
+		FFDBB75E1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */; };
+		FFDBB75F1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */; };
+		FFDBB7631C08CBB30040D344 /* XPYTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7611C08CBB30040D344 /* XPYTransactionOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7641C08CBB30040D344 /* XPYTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7611C08CBB30040D344 /* XPYTransactionOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7651C08CBB30040D344 /* XPYTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7611C08CBB30040D344 /* XPYTransactionOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7661C08CBB30040D344 /* XPYTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */; };
+		FFDBB7671C08CBB30040D344 /* XPYTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */; };
+		FFDBB7681C08CBB30040D344 /* XPYTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */; };
+		FFDBB7691C08CBB30040D344 /* XPYTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */; };
+		FFDBB7701C08CBC00040D344 /* XPYOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */; };
+		FFDBB7711C08CBC00040D344 /* XPYOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */; };
+		FFDBB7721C08CBC00040D344 /* XPYOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */; };
+		FFDBB7731C08CBC00040D344 /* XPYOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */; };
+		FFDBB7771C08CBCB0040D344 /* XPYNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7751C08CBCB0040D344 /* XPYNetwork.h */; };
+		FFDBB7781C08CBCB0040D344 /* XPYNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7751C08CBCB0040D344 /* XPYNetwork.h */; };
+		FFDBB7791C08CBCB0040D344 /* XPYNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7751C08CBCB0040D344 /* XPYNetwork.h */; };
+		FFDBB77A1C08CBCB0040D344 /* XPYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */; };
+		FFDBB77B1C08CBCB0040D344 /* XPYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */; };
+		FFDBB77C1C08CBCB0040D344 /* XPYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */; };
+		FFDBB77D1C08CBCB0040D344 /* XPYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */; };
+		FFDBB7811C08CBDA0040D344 /* XPYProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB77F1C08CBDA0040D344 /* XPYProcessor.h */; };
+		FFDBB7821C08CBDA0040D344 /* XPYProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB77F1C08CBDA0040D344 /* XPYProcessor.h */; };
+		FFDBB7831C08CBDA0040D344 /* XPYProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB77F1C08CBDA0040D344 /* XPYProcessor.h */; };
+		FFDBB7841C08CBDA0040D344 /* XPYProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */; };
+		FFDBB7851C08CBDA0040D344 /* XPYProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */; };
+		FFDBB7861C08CBDA0040D344 /* XPYProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */; };
+		FFDBB7871C08CBDA0040D344 /* XPYProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */; };
+		FFDBB7891C08CC300040D344 /* XPYBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */; };
+		FFDBB78A1C08CC370040D344 /* XPYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6F41C08CB030040D344 /* XPYBlock.m */; };
+		FFDBB78B1C08CC440040D344 /* XPYMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */; };
+		FFDBB78C1C08CC570040D344 /* XPYMerkleTree+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7081C08CB260040D344 /* XPYMerkleTree+Tests.m */; };
+		FFDBB78D1C08CC940040D344 /* XPYOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7121C08CB350040D344 /* XPYOpcode.m */; };
+		FFDBB78E1C08CCBC0040D344 /* XPYScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB71C1C08CB450040D344 /* XPYScript.m */; };
+		FFDBB78F1C08CCCD0040D344 /* XPYScript+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7301C08CB650040D344 /* XPYScript+Tests.m */; };
+		FFDBB7901C08CCE20040D344 /* XPYScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */; };
+		FFDBB7911C08CCF20040D344 /* XPYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */; };
+		FFDBB7921C08CCF30040D344 /* XPYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */; };
+		FFDBB7931C08CD050040D344 /* XPYTransaction+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7461C08CB930040D344 /* XPYTransaction+Tests.m */; };
+		FFDBB7941C08CD210040D344 /* XPYTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */; };
+		FFDBB7951C08CD2E0040D344 /* XPYTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */; };
+		FFDBB7961C08CD2E0040D344 /* XPYOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */; };
+		FFDBB7971C08CD2E0040D344 /* XPYTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */; };
+		FFDBB7981C08CD2E0040D344 /* XPYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */; };
+		FFDBB7991C08CD2E0040D344 /* XPYProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */; };
+		FFDBB79C1C08D0710040D344 /* XPYAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB79A1C08D0710040D344 /* XPYAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB79D1C08D0710040D344 /* XPYAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB79A1C08D0710040D344 /* XPYAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB79E1C08D0710040D344 /* XPYAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB79A1C08D0710040D344 /* XPYAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB79F1C08D0710040D344 /* XPYAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB79B1C08D0710040D344 /* XPYAddress.m */; };
+		FFDBB7A01C08D0710040D344 /* XPYAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB79B1C08D0710040D344 /* XPYAddress.m */; };
+		FFDBB7A11C08D0710040D344 /* XPYAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB79B1C08D0710040D344 /* XPYAddress.m */; };
+		FFDBB7A21C08D0710040D344 /* XPYAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB79B1C08D0710040D344 /* XPYAddress.m */; };
+		FFDBB7A51C08D0750040D344 /* XPYAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A41C08D0750040D344 /* XPYAddressSubclass.h */; };
+		FFDBB7A61C08D0750040D344 /* XPYAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A41C08D0750040D344 /* XPYAddressSubclass.h */; };
+		FFDBB7A71C08D0750040D344 /* XPYAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A41C08D0750040D344 /* XPYAddressSubclass.h */; };
+		FFDBB7AA1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A81C08D07D0040D344 /* XPYAddress+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7AB1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A81C08D07D0040D344 /* XPYAddress+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7AC1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7A81C08D07D0040D344 /* XPYAddress+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7B21C08D09F0040D344 /* XPYPaycoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7B01C08D09F0040D344 /* XPYPaycoinURL.h */; };
+		FFDBB7B31C08D09F0040D344 /* XPYPaycoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7B01C08D09F0040D344 /* XPYPaycoinURL.h */; };
+		FFDBB7B41C08D09F0040D344 /* XPYPaycoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7B01C08D09F0040D344 /* XPYPaycoinURL.h */; };
+		FFDBB7B51C08D09F0040D344 /* XPYPaycoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */; };
+		FFDBB7B61C08D09F0040D344 /* XPYPaycoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */; };
+		FFDBB7B71C08D09F0040D344 /* XPYPaycoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */; };
+		FFDBB7C21C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C01C08D0C00040D344 /* XPYPaymentProtocol.h */; };
+		FFDBB7C31C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C01C08D0C00040D344 /* XPYPaymentProtocol.h */; };
+		FFDBB7C41C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C01C08D0C00040D344 /* XPYPaymentProtocol.h */; };
+		FFDBB7C51C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */; };
+		FFDBB7C61C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */; };
+		FFDBB7C71C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */; };
+		FFDBB7CA1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C81C08D0CC0040D344 /* XPYPaymentRequest.h */; };
+		FFDBB7CB1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C81C08D0CC0040D344 /* XPYPaymentRequest.h */; };
+		FFDBB7CC1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7C81C08D0CC0040D344 /* XPYPaymentRequest.h */; };
+		FFDBB7CD1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */; };
+		FFDBB7CE1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */; };
+		FFDBB7CF1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */; };
+		FFDBB7D01C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */; };
+		FFDBB7D11C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */; };
+		FFDBB7D21C08D0D40040D344 /* XPYAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB79B1C08D0710040D344 /* XPYAddress.m */; };
+		FFDBB7D31C08D0E90040D344 /* XPYAddress+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7A91C08D07D0040D344 /* XPYAddress+Tests.m */; };
+		FFDBB7D41C08D0F70040D344 /* XPYPaycoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */; };
+		FFDBB7D51C08D0F80040D344 /* XPYPaycoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */; };
+		FFDBB7D61C08D1040040D344 /* XPYPaycoinURL+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7B91C08D0A80040D344 /* XPYPaycoinURL+Tests.m */; };
+		FFDBB7D71C08D10E0040D344 /* XPYPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */; };
+		FFDBB7D81C08D10F0040D344 /* XPYPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */; };
+		FFDBB7DF1C08D1440040D344 /* XPYAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7D91C08D1440040D344 /* XPYAssetAddress.h */; };
+		FFDBB7E01C08D1440040D344 /* XPYAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7D91C08D1440040D344 /* XPYAssetAddress.h */; };
+		FFDBB7E11C08D1440040D344 /* XPYAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7D91C08D1440040D344 /* XPYAssetAddress.h */; };
+		FFDBB7E21C08D1440040D344 /* XPYAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */; };
+		FFDBB7E31C08D1440040D344 /* XPYAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */; };
+		FFDBB7E41C08D1440040D344 /* XPYAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */; };
+		FFDBB7E51C08D1440040D344 /* XPYAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */; };
+		FFDBB7E61C08D1440040D344 /* XPYAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */; };
+		FFDBB7E71C08D1440040D344 /* XPYAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DB1C08D1440040D344 /* XPYAssetID.h */; };
+		FFDBB7E81C08D1440040D344 /* XPYAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DB1C08D1440040D344 /* XPYAssetID.h */; };
+		FFDBB7E91C08D1440040D344 /* XPYAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DB1C08D1440040D344 /* XPYAssetID.h */; };
+		FFDBB7EA1C08D1440040D344 /* XPYAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */; };
+		FFDBB7EB1C08D1440040D344 /* XPYAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */; };
+		FFDBB7EC1C08D1440040D344 /* XPYAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */; };
+		FFDBB7ED1C08D1440040D344 /* XPYAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */; };
+		FFDBB7EE1C08D1440040D344 /* XPYAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */; };
+		FFDBB7EF1C08D1440040D344 /* XPYAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DD1C08D1440040D344 /* XPYAssetType.h */; };
+		FFDBB7F01C08D1440040D344 /* XPYAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DD1C08D1440040D344 /* XPYAssetType.h */; };
+		FFDBB7F11C08D1440040D344 /* XPYAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7DD1C08D1440040D344 /* XPYAssetType.h */; };
+		FFDBB7F21C08D1440040D344 /* XPYAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */; };
+		FFDBB7F31C08D1440040D344 /* XPYAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */; };
+		FFDBB7F41C08D1440040D344 /* XPYAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */; };
+		FFDBB7F51C08D1440040D344 /* XPYAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */; };
+		FFDBB7F61C08D1440040D344 /* XPYAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */; };
+		FFDBB7FB1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7F71C08D1890040D344 /* XPYBlockchainInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7FC1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7F71C08D1890040D344 /* XPYBlockchainInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7FD1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB7F71C08D1890040D344 /* XPYBlockchainInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDBB7FE1C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */; };
+		FFDBB7FF1C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */; };
+		FFDBB8001C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */; };
+		FFDBB8011C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */; };
+		FFDBB8021C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */; };
+		FFDBB8061C08D18A0040D344 /* XPYBlockchainInfo+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB7FA1C08D1890040D344 /* XPYBlockchainInfo+Tests.m */; };
+		FFDBB80D1C08D1B00040D344 /* XPYChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB80B1C08D1B00040D344 /* XPYChainCom.h */; };
+		FFDBB80E1C08D1B00040D344 /* XPYChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB80B1C08D1B00040D344 /* XPYChainCom.h */; };
+		FFDBB80F1C08D1B00040D344 /* XPYChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB80B1C08D1B00040D344 /* XPYChainCom.h */; };
+		FFDBB8101C08D1B00040D344 /* XPYChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */; };
+		FFDBB8111C08D1B00040D344 /* XPYChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */; };
+		FFDBB8121C08D1B00040D344 /* XPYChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */; };
+		FFDBB8131C08D1B00040D344 /* XPYChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */; };
+		FFDBB8141C08D1B00040D344 /* XPYChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */; };
+		FFDBB8171C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8151C08D1D20040D344 /* XPYCurrencyConverter.h */; };
+		FFDBB8181C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8151C08D1D20040D344 /* XPYCurrencyConverter.h */; };
+		FFDBB8191C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8151C08D1D20040D344 /* XPYCurrencyConverter.h */; };
+		FFDBB81A1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */; };
+		FFDBB81B1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */; };
+		FFDBB81C1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */; };
+		FFDBB81D1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */; };
+		FFDBB81E1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */; };
+		FFDBB8241C08D1D90040D344 /* XPYCurrencyConverter+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8201C08D1D90040D344 /* XPYCurrencyConverter+Tests.m */; };
+		FFDBB82B1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8291C08D1FF0040D344 /* XPYNumberFormatter.h */; };
+		FFDBB82C1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8291C08D1FF0040D344 /* XPYNumberFormatter.h */; };
+		FFDBB82D1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8291C08D1FF0040D344 /* XPYNumberFormatter.h */; };
+		FFDBB82E1C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */; };
+		FFDBB82F1C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */; };
+		FFDBB8301C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */; };
+		FFDBB8311C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */; };
+		FFDBB8321C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */; };
+		FFDBB8371C08D20A0040D344 /* XPYPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8331C08D20A0040D344 /* XPYPriceSource.h */; };
+		FFDBB8381C08D20A0040D344 /* XPYPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8331C08D20A0040D344 /* XPYPriceSource.h */; };
+		FFDBB8391C08D20A0040D344 /* XPYPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8331C08D20A0040D344 /* XPYPriceSource.h */; };
+		FFDBB83A1C08D20A0040D344 /* XPYPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */; };
+		FFDBB83B1C08D20A0040D344 /* XPYPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */; };
+		FFDBB83C1C08D20A0040D344 /* XPYPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */; };
+		FFDBB83D1C08D20A0040D344 /* XPYPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */; };
+		FFDBB83E1C08D20A0040D344 /* XPYPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */; };
+		FFDBB8421C08D20A0040D344 /* XPYPriceSource+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8361C08D20A0040D344 /* XPYPriceSource+Tests.m */; };
+		FFDBB84F1C08D2570040D344 /* XPYEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8471C08D2570040D344 /* XPYEncryptedBackup.h */; };
+		FFDBB8501C08D2570040D344 /* XPYEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8471C08D2570040D344 /* XPYEncryptedBackup.h */; };
+		FFDBB8511C08D2570040D344 /* XPYEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8471C08D2570040D344 /* XPYEncryptedBackup.h */; };
+		FFDBB8521C08D2570040D344 /* XPYEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */; };
+		FFDBB8531C08D2570040D344 /* XPYEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */; };
+		FFDBB8541C08D2570040D344 /* XPYEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */; };
+		FFDBB8551C08D2570040D344 /* XPYEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */; };
+		FFDBB8561C08D2570040D344 /* XPYEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */; };
+		FFDBB85A1C08D2570040D344 /* XPYEncryptedBackup+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84A1C08D2570040D344 /* XPYEncryptedBackup+Tests.m */; };
+		FFDBB85F1C08D2570040D344 /* XPYEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB84B1C08D2570040D344 /* XPYEncryptedMessage.h */; };
+		FFDBB8601C08D2570040D344 /* XPYEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB84B1C08D2570040D344 /* XPYEncryptedMessage.h */; };
+		FFDBB8611C08D2570040D344 /* XPYEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB84B1C08D2570040D344 /* XPYEncryptedMessage.h */; };
+		FFDBB8621C08D2570040D344 /* XPYEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */; };
+		FFDBB8631C08D2570040D344 /* XPYEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */; };
+		FFDBB8641C08D2570040D344 /* XPYEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */; };
+		FFDBB8651C08D2570040D344 /* XPYEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */; };
+		FFDBB8661C08D2570040D344 /* XPYEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */; };
+		FFDBB86A1C08D2570040D344 /* XPYEncryptedMessage+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB84E1C08D2570040D344 /* XPYEncryptedMessage+Tests.m */; };
+		FFDBB8731C08D28A0040D344 /* XPYBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB86F1C08D2890040D344 /* XPYBlindSignature.h */; };
+		FFDBB8741C08D28A0040D344 /* XPYBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB86F1C08D2890040D344 /* XPYBlindSignature.h */; };
+		FFDBB8751C08D28A0040D344 /* XPYBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB86F1C08D2890040D344 /* XPYBlindSignature.h */; };
+		FFDBB8761C08D28A0040D344 /* XPYBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */; };
+		FFDBB8771C08D28A0040D344 /* XPYBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */; };
+		FFDBB8781C08D28A0040D344 /* XPYBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */; };
+		FFDBB8791C08D28A0040D344 /* XPYBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */; };
+		FFDBB87A1C08D28A0040D344 /* XPYBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */; };
+		FFDBB87E1C08D28A0040D344 /* XPYBlindSignature+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8721C08D28A0040D344 /* XPYBlindSignature+Tests.m */; };
+		FFDBB8871C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8831C08D2930040D344 /* XPYFancyEncryptedMessage.h */; };
+		FFDBB8881C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8831C08D2930040D344 /* XPYFancyEncryptedMessage.h */; };
+		FFDBB8891C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8831C08D2930040D344 /* XPYFancyEncryptedMessage.h */; };
+		FFDBB88A1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */; };
+		FFDBB88B1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */; };
+		FFDBB88C1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */; };
+		FFDBB88D1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */; };
+		FFDBB88E1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */; };
+		FFDBB8921C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8861C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.m */; };
+		FFDBB8AA1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8A91C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch */; };
+		FFDBB8AB1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8A91C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch */; };
+		FFDBB8AC1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8A91C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch */; };
+		FFDBB8BA1C08E5030040D344 /* XPY256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8AD1C08E5030040D344 /* XPY256Tests.swift */; };
+		FFDBB8BB1C08E5030040D344 /* XPYAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8AE1C08E5030040D344 /* XPYAddressTests.swift */; };
+		FFDBB8BC1C08E5030040D344 /* XPYBitcoinURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8AF1C08E5030040D344 /* XPYBitcoinURLTests.swift */; };
+		FFDBB8BD1C08E5030040D344 /* XPYBlindSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B01C08E5030040D344 /* XPYBlindSignatureTests.swift */; };
+		FFDBB8BE1C08E5030040D344 /* XPYBlockchainInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B11C08E5030040D344 /* XPYBlockchainInfoTests.swift */; };
+		FFDBB8BF1C08E5030040D344 /* XPYCurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B21C08E5030040D344 /* XPYCurrencyConverterTests.swift */; };
+		FFDBB8C01C08E5030040D344 /* XPYCurvePointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B31C08E5030040D344 /* XPYCurvePointTests.swift */; };
+		FFDBB8C11C08E5030040D344 /* XPYDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B41C08E5030040D344 /* XPYDataTests.swift */; };
+		FFDBB8C21C08E5030040D344 /* XPYEncryptedBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B51C08E5030040D344 /* XPYEncryptedBackupTests.swift */; };
+		FFDBB8C31C08E5030040D344 /* XPYFancyEncryptedMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B61C08E5030040D344 /* XPYFancyEncryptedMessageTests.swift */; };
+		FFDBB8C41C08E5030040D344 /* XPYKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B71C08E5030040D344 /* XPYKeyTests.swift */; };
+		FFDBB8C51C08E5030040D344 /* XPYPaymentProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B81C08E5030040D344 /* XPYPaymentProtocolTests.swift */; };
+		FFDBB8C61C08E5030040D344 /* XPYPriceSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8B91C08E5030040D344 /* XPYPriceSourceTests.swift */; };
+		FFDBB8CE1C0928850040D344 /* XPYPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8C81C0928850040D344 /* XPYPaymentMethod.h */; };
+		FFDBB8CF1C0928850040D344 /* XPYPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8C81C0928850040D344 /* XPYPaymentMethod.h */; };
+		FFDBB8D01C0928850040D344 /* XPYPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8C81C0928850040D344 /* XPYPaymentMethod.h */; };
+		FFDBB8D11C0928850040D344 /* XPYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */; };
+		FFDBB8D21C0928850040D344 /* XPYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */; };
+		FFDBB8D31C0928850040D344 /* XPYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */; };
+		FFDBB8D41C0928850040D344 /* XPYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */; };
+		FFDBB8D51C0928850040D344 /* XPYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */; };
+		FFDBB8D61C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CA1C0928850040D344 /* XPYPaymentMethodDetails.h */; };
+		FFDBB8D71C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CA1C0928850040D344 /* XPYPaymentMethodDetails.h */; };
+		FFDBB8D81C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CA1C0928850040D344 /* XPYPaymentMethodDetails.h */; };
+		FFDBB8D91C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */; };
+		FFDBB8DA1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */; };
+		FFDBB8DB1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */; };
+		FFDBB8DC1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */; };
+		FFDBB8DD1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */; };
+		FFDBB8DE1C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CC1C0928850040D344 /* XPYPaymentMethodRequest.h */; };
+		FFDBB8DF1C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CC1C0928850040D344 /* XPYPaymentMethodRequest.h */; };
+		FFDBB8E01C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDBB8CC1C0928850040D344 /* XPYPaymentMethodRequest.h */; };
+		FFDBB8E11C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */; };
+		FFDBB8E21C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */; };
+		FFDBB8E31C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */; };
+		FFDBB8E41C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */; };
+		FFDBB8E51C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */; };
+		FFDBB8E71C0941AE0040D344 /* update_headers.rb in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB8E61C0941AE0040D344 /* update_headers.rb */; };
+		FFDBB8E81C0941AE0040D344 /* update_headers.rb in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB8E61C0941AE0040D344 /* update_headers.rb */; };
+		FFDBB8EA1C0941BC0040D344 /* build_libraries.sh in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB8E91C0941BC0040D344 /* build_libraries.sh */; };
+		FFDBB8EB1C0941BC0040D344 /* build_libraries.sh in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB8E91C0941BC0040D344 /* build_libraries.sh */; };
+		FFDBB8EC1C0943C80040D344 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20148C081835638200E68E9C /* InfoPlist.strings */; };
+		FFFC77FA1C063C99005C1BB5 /* XPYErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC77F81C063C99005C1BB5 /* XPYErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC77FB1C063C99005C1BB5 /* XPYErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC77F81C063C99005C1BB5 /* XPYErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC77FC1C063C99005C1BB5 /* XPYErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC77F81C063C99005C1BB5 /* XPYErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC77FD1C063C99005C1BB5 /* XPYErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC77F91C063C99005C1BB5 /* XPYErrors.m */; };
+		FFFC77FE1C063C99005C1BB5 /* XPYErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC77F91C063C99005C1BB5 /* XPYErrors.m */; };
+		FFFC77FF1C063C99005C1BB5 /* XPYErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC77F91C063C99005C1BB5 /* XPYErrors.m */; };
+		FFFC78141C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */; };
+		FFFC78151C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */; };
+		FFFC78161C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */; };
+		FFFC78171C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */; };
+		FFFC78181C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */; };
+		FFFC781A1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78191C063DC3005C1BB5 /* NS+XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC781B1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78191C063DC3005C1BB5 /* NS+XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC781C1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78191C063DC3005C1BB5 /* NS+XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC781D1C063DE1005C1BB5 /* XPYErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC77F91C063C99005C1BB5 /* XPYErrors.m */; };
+		FFFC781E1C063DE2005C1BB5 /* XPYErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC77F91C063C99005C1BB5 /* XPYErrors.m */; };
+		FFFC78211C063DFB005C1BB5 /* NSData+XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC781F1C063DFB005C1BB5 /* NSData+XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78221C063DFB005C1BB5 /* NSData+XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC781F1C063DFB005C1BB5 /* NSData+XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78231C063DFB005C1BB5 /* NSData+XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC781F1C063DFB005C1BB5 /* NSData+XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78241C063DFB005C1BB5 /* NSData+XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */; };
+		FFFC78251C063DFB005C1BB5 /* NSData+XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */; };
+		FFFC78261C063DFB005C1BB5 /* NSData+XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */; };
+		FFFC78271C063DFB005C1BB5 /* NSData+XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */; };
+		FFFC78281C063DFB005C1BB5 /* NSData+XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */; };
+		FFFC782B1C063E2D005C1BB5 /* XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78291C063E2D005C1BB5 /* XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC782C1C063E2D005C1BB5 /* XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78291C063E2D005C1BB5 /* XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC782D1C063E2D005C1BB5 /* XPYData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78291C063E2D005C1BB5 /* XPYData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC782E1C063E2D005C1BB5 /* XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC782A1C063E2D005C1BB5 /* XPYData.m */; };
+		FFFC782F1C063E2D005C1BB5 /* XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC782A1C063E2D005C1BB5 /* XPYData.m */; };
+		FFFC78301C063E2D005C1BB5 /* XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC782A1C063E2D005C1BB5 /* XPYData.m */; };
+		FFFC78311C063E2D005C1BB5 /* XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC782A1C063E2D005C1BB5 /* XPYData.m */; };
+		FFFC78321C063E2D005C1BB5 /* XPYData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC782A1C063E2D005C1BB5 /* XPYData.m */; };
+		FFFC78351C063E59005C1BB5 /* XPYData+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78331C063E59005C1BB5 /* XPYData+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78361C063E59005C1BB5 /* XPYData+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78331C063E59005C1BB5 /* XPYData+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78371C063E59005C1BB5 /* XPYData+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78331C063E59005C1BB5 /* XPYData+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78381C063E59005C1BB5 /* XPYData+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */; };
+		FFFC78391C063E59005C1BB5 /* XPYData+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */; };
+		FFFC783A1C063E59005C1BB5 /* XPYData+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */; };
+		FFFC783B1C063E59005C1BB5 /* XPYData+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */; };
+		FFFC783C1C063E59005C1BB5 /* XPYData+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */; };
+		FFFC783F1C063E69005C1BB5 /* XPYHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC783D1C063E69005C1BB5 /* XPYHashID.h */; };
+		FFFC78401C063E69005C1BB5 /* XPYHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC783D1C063E69005C1BB5 /* XPYHashID.h */; };
+		FFFC78411C063E69005C1BB5 /* XPYHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC783D1C063E69005C1BB5 /* XPYHashID.h */; };
+		FFFC78421C063E69005C1BB5 /* XPYHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC783E1C063E69005C1BB5 /* XPYHashID.m */; };
+		FFFC78431C063E69005C1BB5 /* XPYHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC783E1C063E69005C1BB5 /* XPYHashID.m */; };
+		FFFC78441C063E69005C1BB5 /* XPYHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC783E1C063E69005C1BB5 /* XPYHashID.m */; };
+		FFFC78451C063E69005C1BB5 /* XPYHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC783E1C063E69005C1BB5 /* XPYHashID.m */; };
+		FFFC78461C063E69005C1BB5 /* XPYHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC783E1C063E69005C1BB5 /* XPYHashID.m */; };
+		FFFC78491C063E81005C1BB5 /* XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78471C063E81005C1BB5 /* XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC784A1C063E81005C1BB5 /* XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78471C063E81005C1BB5 /* XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC784B1C063E81005C1BB5 /* XPYBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78471C063E81005C1BB5 /* XPYBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC784C1C063E81005C1BB5 /* XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78481C063E81005C1BB5 /* XPYBase58.m */; };
+		FFFC784D1C063E81005C1BB5 /* XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78481C063E81005C1BB5 /* XPYBase58.m */; };
+		FFFC784E1C063E81005C1BB5 /* XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78481C063E81005C1BB5 /* XPYBase58.m */; };
+		FFFC784F1C063E81005C1BB5 /* XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78481C063E81005C1BB5 /* XPYBase58.m */; };
+		FFFC78501C063E81005C1BB5 /* XPYBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78481C063E81005C1BB5 /* XPYBase58.m */; };
+		FFFC78531C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78511C063E88005C1BB5 /* XPYBase58+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78541C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78511C063E88005C1BB5 /* XPYBase58+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78551C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78511C063E88005C1BB5 /* XPYBase58+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78561C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */; };
+		FFFC78571C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */; };
+		FFFC78581C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */; };
+		FFFC78591C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */; };
+		FFFC785A1C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */; };
+		FFFC785D1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC785B1C063E9A005C1BB5 /* XPYProtocolSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC785E1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC785B1C063E9A005C1BB5 /* XPYProtocolSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC785F1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC785B1C063E9A005C1BB5 /* XPYProtocolSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78601C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */; };
+		FFFC78611C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */; };
+		FFFC78621C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */; };
+		FFFC78631C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */; };
+		FFFC78641C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */; };
+		FFFC78671C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78651C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78681C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78651C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC78691C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78651C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFC786A1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */; };
+		FFFC786B1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */; };
+		FFFC786C1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */; };
+		FFFC786D1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */; };
+		FFFC786E1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */; };
+		FFFC78711C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC786F1C063EAF005C1BB5 /* XPYProtocolBuffers.h */; };
+		FFFC78721C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC786F1C063EAF005C1BB5 /* XPYProtocolBuffers.h */; };
+		FFFC78731C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC786F1C063EAF005C1BB5 /* XPYProtocolBuffers.h */; };
+		FFFC78741C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */; };
+		FFFC78751C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */; };
+		FFFC78761C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */; };
+		FFFC78771C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */; };
+		FFFC78781C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */; };
+		FFFC787B1C063EC5005C1BB5 /* XPYQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78791C063EC5005C1BB5 /* XPYQRCode.h */; };
+		FFFC787C1C063EC5005C1BB5 /* XPYQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78791C063EC5005C1BB5 /* XPYQRCode.h */; };
+		FFFC787D1C063EC5005C1BB5 /* XPYQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78791C063EC5005C1BB5 /* XPYQRCode.h */; };
+		FFFC787E1C063EC5005C1BB5 /* XPYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */; };
+		FFFC787F1C063EC5005C1BB5 /* XPYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */; };
+		FFFC78801C063EC5005C1BB5 /* XPYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */; };
+		FFFC78811C063EC5005C1BB5 /* XPYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */; };
+		FFFC78821C063EC5005C1BB5 /* XPYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */; };
+		FFFC78851C0640CA005C1BB5 /* XPY256.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78831C0640CA005C1BB5 /* XPY256.h */; };
+		FFFC78861C0640CA005C1BB5 /* XPY256.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78831C0640CA005C1BB5 /* XPY256.h */; };
+		FFFC78871C0640CA005C1BB5 /* XPY256.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78831C0640CA005C1BB5 /* XPY256.h */; };
+		FFFC78881C0640CA005C1BB5 /* XPY256.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78841C0640CA005C1BB5 /* XPY256.m */; };
+		FFFC78891C0640CA005C1BB5 /* XPY256.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78841C0640CA005C1BB5 /* XPY256.m */; };
+		FFFC788A1C0640CA005C1BB5 /* XPY256.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78841C0640CA005C1BB5 /* XPY256.m */; };
+		FFFC788B1C0640CA005C1BB5 /* XPY256.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78841C0640CA005C1BB5 /* XPY256.m */; };
+		FFFC788C1C0640CA005C1BB5 /* XPY256.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78841C0640CA005C1BB5 /* XPY256.m */; };
+		FFFC78921C0640D0005C1BB5 /* XPY256+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC788E1C0640D0005C1BB5 /* XPY256+Tests.m */; };
+		FFFC78991C064110005C1BB5 /* XPYBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78971C064110005C1BB5 /* XPYBigNumber.h */; };
+		FFFC789A1C064110005C1BB5 /* XPYBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78971C064110005C1BB5 /* XPYBigNumber.h */; };
+		FFFC789B1C064110005C1BB5 /* XPYBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78971C064110005C1BB5 /* XPYBigNumber.h */; };
+		FFFC789C1C064110005C1BB5 /* XPYBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78981C064110005C1BB5 /* XPYBigNumber.m */; };
+		FFFC789D1C064110005C1BB5 /* XPYBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78981C064110005C1BB5 /* XPYBigNumber.m */; };
+		FFFC789E1C064110005C1BB5 /* XPYBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78981C064110005C1BB5 /* XPYBigNumber.m */; };
+		FFFC789F1C064110005C1BB5 /* XPYBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78981C064110005C1BB5 /* XPYBigNumber.m */; };
+		FFFC78A01C064110005C1BB5 /* XPYBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78981C064110005C1BB5 /* XPYBigNumber.m */; };
+		FFFC78A31C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78A11C06411C005C1BB5 /* XPYBigNumber+Tests.h */; };
+		FFFC78A41C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78A11C06411C005C1BB5 /* XPYBigNumber+Tests.h */; };
+		FFFC78A51C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78A11C06411C005C1BB5 /* XPYBigNumber+Tests.h */; };
+		FFFC78A61C06411C005C1BB5 /* XPYBigNumber+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78A21C06411C005C1BB5 /* XPYBigNumber+Tests.m */; };
+		FFFC78AD1C064126005C1BB5 /* XPYCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78AB1C064126005C1BB5 /* XPYCurvePoint.h */; };
+		FFFC78AE1C064126005C1BB5 /* XPYCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78AB1C064126005C1BB5 /* XPYCurvePoint.h */; };
+		FFFC78AF1C064126005C1BB5 /* XPYCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78AB1C064126005C1BB5 /* XPYCurvePoint.h */; };
+		FFFC78B01C064126005C1BB5 /* XPYCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */; };
+		FFFC78B11C064126005C1BB5 /* XPYCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */; };
+		FFFC78B21C064126005C1BB5 /* XPYCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */; };
+		FFFC78B31C064126005C1BB5 /* XPYCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */; };
+		FFFC78B41C064126005C1BB5 /* XPYCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */; };
+		FFFC78BA1C06412B005C1BB5 /* XPYCurvePoint+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78B61C06412B005C1BB5 /* XPYCurvePoint+Tests.m */; };
+		FFFC78C11C064137005C1BB5 /* XPYKey.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78BF1C064137005C1BB5 /* XPYKey.h */; };
+		FFFC78C21C064137005C1BB5 /* XPYKey.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78BF1C064137005C1BB5 /* XPYKey.h */; };
+		FFFC78C31C064137005C1BB5 /* XPYKey.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78BF1C064137005C1BB5 /* XPYKey.h */; };
+		FFFC78C41C064137005C1BB5 /* XPYKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78C01C064137005C1BB5 /* XPYKey.m */; };
+		FFFC78C51C064137005C1BB5 /* XPYKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78C01C064137005C1BB5 /* XPYKey.m */; };
+		FFFC78C61C064137005C1BB5 /* XPYKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78C01C064137005C1BB5 /* XPYKey.m */; };
+		FFFC78C71C064137005C1BB5 /* XPYKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78C01C064137005C1BB5 /* XPYKey.m */; };
+		FFFC78C81C064137005C1BB5 /* XPYKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78C01C064137005C1BB5 /* XPYKey.m */; };
+		FFFC78CB1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78C91C06413C005C1BB5 /* XPYKey+Tests.h */; };
+		FFFC78CC1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78C91C06413C005C1BB5 /* XPYKey+Tests.h */; };
+		FFFC78CD1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78C91C06413C005C1BB5 /* XPYKey+Tests.h */; };
+		FFFC78CE1C06413C005C1BB5 /* XPYKey+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78CA1C06413C005C1BB5 /* XPYKey+Tests.m */; };
+		FFFC78D51C064142005C1BB5 /* XPYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78D31C064142005C1BB5 /* XPYKeychain.h */; };
+		FFFC78D61C064142005C1BB5 /* XPYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78D31C064142005C1BB5 /* XPYKeychain.h */; };
+		FFFC78D71C064142005C1BB5 /* XPYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78D31C064142005C1BB5 /* XPYKeychain.h */; };
+		FFFC78D81C064142005C1BB5 /* XPYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78D41C064142005C1BB5 /* XPYKeychain.m */; };
+		FFFC78D91C064142005C1BB5 /* XPYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78D41C064142005C1BB5 /* XPYKeychain.m */; };
+		FFFC78DA1C064142005C1BB5 /* XPYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78D41C064142005C1BB5 /* XPYKeychain.m */; };
+		FFFC78DB1C064142005C1BB5 /* XPYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78D41C064142005C1BB5 /* XPYKeychain.m */; };
+		FFFC78DC1C064142005C1BB5 /* XPYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78D41C064142005C1BB5 /* XPYKeychain.m */; };
+		FFFC78E21C064147005C1BB5 /* XPYKeychain+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78DE1C064147005C1BB5 /* XPYKeychain+Tests.m */; };
+		FFFC78E91C064151005C1BB5 /* XPYMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78E71C064151005C1BB5 /* XPYMnemonic.h */; };
+		FFFC78EA1C064151005C1BB5 /* XPYMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78E71C064151005C1BB5 /* XPYMnemonic.h */; };
+		FFFC78EB1C064151005C1BB5 /* XPYMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78E71C064151005C1BB5 /* XPYMnemonic.h */; };
+		FFFC78EC1C064151005C1BB5 /* XPYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */; };
+		FFFC78ED1C064151005C1BB5 /* XPYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */; };
+		FFFC78EE1C064151005C1BB5 /* XPYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */; };
+		FFFC78EF1C064151005C1BB5 /* XPYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */; };
+		FFFC78F01C064151005C1BB5 /* XPYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */; };
+		FFFC78F31C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78F11C064159005C1BB5 /* XPYMnemonic+Tests.h */; };
+		FFFC78F41C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78F11C064159005C1BB5 /* XPYMnemonic+Tests.h */; };
+		FFFC78F51C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFC78F11C064159005C1BB5 /* XPYMnemonic+Tests.h */; };
+		FFFC78F61C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */; };
+		FFFC78F71C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */; };
+		FFFC78F81C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */; };
+		FFFC78F91C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */; };
+		FFFC78FA1C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		757B241C1B03F1BF0084A9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D2801A17B8FE00004A462B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206B0112183547C200878B8D;
+			remoteInfo = CoreBitcoinOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20148ADD18355D7200E68E9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5B17B8FF47005AC9E6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20148ADF18355D7200E68E9C /* libCorePaycoinIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCorePaycoinIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148B2418355E8F00E68E9C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		20148B3718355F0100E68E9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		20148B3A18355F0100E68E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20148B3B18355F0100E68E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		20148B3C18355F0100E68E9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		20148BFD183562C400E68E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		20148C031835638200E68E9C /* CorePaycoinIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePaycoinIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148C091835638200E68E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20148C9B183643AB00E68E9C /* libCorePaycoinOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCorePaycoinOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148CA8183643AB00E68E9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		20203ADD19F66B6E0085C01F /* MEME_GLOSSARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = MEME_GLOSSARY.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2039DB0117E2ED2B0051177B /* GLOSSARY.md */ = {isa = PBXFileReference; lastKnownFileType = text; lineEnding = 0; path = GLOSSARY.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2039DB0217E2ED7F0051177B /* ScriptStringRepresentation.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScriptStringRepresentation.md; sourceTree = "<group>"; };
+		206B0113183547C200878B8D /* CorePaycoinOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CorePaycoinOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		206B011E183547C200878B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2084DD5D17B8FF47005AC9E6 /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		2084DD6017B8FF47005AC9E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2084DD6317B8FF47005AC9E6 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2084DD9417B8FF7E005AC9E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2084DD9517B8FFA2005AC9E6 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		2084DD9617B8FFA2005AC9E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2084DD9A17B90081005AC9E6 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl; path = openssl/include/openssl; sourceTree = SOURCE_ROOT; };
+		2084DD9F17B90174005AC9E6 /* update_openssl.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_openssl.sh; sourceTree = SOURCE_ROOT; };
+		209818911839688D00541747 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; lineEnding = 0; path = LICENSE.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
+		20A443D21AC941F7008B3447 /* ReleaseNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = ReleaseNotes.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "openssl/lib/libcrypto-ios.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-osx.a"; path = "openssl/lib/libcrypto-osx.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-ios.a"; path = "openssl/lib/libssl-ios.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-osx.a"; path = "openssl/lib/libssl-osx.a"; sourceTree = SOURCE_ROOT; };
+		20C3F16817BFDCF8009DB89C /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		20D09B9E18BA144C00794209 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		20D09B9F18BA14F900794209 /* CorePaycoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CorePaycoin.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		20D09BA018BA14F900794209 /* CorePaycoin+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CorePaycoin+Categories.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		20D09BBA18BA29BB00794209 /* postprocess_openssl_includes_in_framework.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; lineEnding = 0; path = postprocess_openssl_includes_in_framework.rb; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20D2802517B8FE00004A462B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		757B24151B03F1BF0084A9DE /* CorePaycoinTestsOSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePaycoinTestsOSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		757B24211B03F1E80084A9DE /* SwiftBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SwiftBridgingHeader.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB6E51C08CAE10040D344 /* XPYUnitsAndLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUnitsAndLimits.h; sourceTree = "<group>"; };
+		FFDBB6E91C08CAFB0040D344 /* XPYBlockHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBlockHeader.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBlockHeader.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB6F31C08CB030040D344 /* XPYBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBlock.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB6F41C08CB030040D344 /* XPYBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBlock.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB6FD1C08CB1F0040D344 /* XPYMerkleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYMerkleTree.h; sourceTree = "<group>"; };
+		FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYMerkleTree.m; sourceTree = "<group>"; };
+		FFDBB7071C08CB260040D344 /* XPYMerkleTree+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYMerkleTree+Tests.h"; sourceTree = "<group>"; };
+		FFDBB7081C08CB260040D344 /* XPYMerkleTree+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYMerkleTree+Tests.m"; sourceTree = "<group>"; };
+		FFDBB7111C08CB350040D344 /* XPYOpcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYOpcode.h; sourceTree = "<group>"; };
+		FFDBB7121C08CB350040D344 /* XPYOpcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYOpcode.m; sourceTree = "<group>"; };
+		FFDBB71B1C08CB450040D344 /* XPYScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYScript.h; sourceTree = "<group>"; };
+		FFDBB71C1C08CB450040D344 /* XPYScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYScript.m; sourceTree = "<group>"; };
+		FFDBB7251C08CB510040D344 /* XPYScriptMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYScriptMachine.h; sourceTree = "<group>"; };
+		FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYScriptMachine.m; sourceTree = "<group>"; };
+		FFDBB72F1C08CB650040D344 /* XPYScript+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYScript+Tests.h"; sourceTree = "<group>"; };
+		FFDBB7301C08CB650040D344 /* XPYScript+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYScript+Tests.m"; sourceTree = "<group>"; };
+		FFDBB7391C08CB7A0040D344 /* XPYSignatureHashType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYSignatureHashType.h; sourceTree = "<group>"; };
+		FFDBB73D1C08CB8C0040D344 /* XPYTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTransaction.h; sourceTree = "<group>"; };
+		FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTransaction.m; sourceTree = "<group>"; };
+		FFDBB7451C08CB930040D344 /* XPYTransaction+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYTransaction+Tests.h"; sourceTree = "<group>"; };
+		FFDBB7461C08CB930040D344 /* XPYTransaction+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYTransaction+Tests.m"; sourceTree = "<group>"; };
+		FFDBB74D1C08CB9F0040D344 /* XPYTransactionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTransactionBuilder.h; sourceTree = "<group>"; };
+		FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTransactionBuilder.m; sourceTree = "<group>"; };
+		FFDBB7571C08CBAB0040D344 /* XPYTransactionInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTransactionInput.h; sourceTree = "<group>"; };
+		FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTransactionInput.m; sourceTree = "<group>"; };
+		FFDBB7611C08CBB30040D344 /* XPYTransactionOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTransactionOutput.h; sourceTree = "<group>"; };
+		FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTransactionOutput.m; sourceTree = "<group>"; };
+		FFDBB76B1C08CBC00040D344 /* XPYOutpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYOutpoint.h; sourceTree = "<group>"; };
+		FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYOutpoint.m; sourceTree = "<group>"; };
+		FFDBB7751C08CBCB0040D344 /* XPYNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYNetwork.h; sourceTree = "<group>"; };
+		FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYNetwork.m; sourceTree = "<group>"; };
+		FFDBB77F1C08CBDA0040D344 /* XPYProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYProcessor.h; sourceTree = "<group>"; };
+		FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYProcessor.m; sourceTree = "<group>"; };
+		FFDBB79A1C08D0710040D344 /* XPYAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYAddress.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB79B1C08D0710040D344 /* XPYAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYAddress.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7A41C08D0750040D344 /* XPYAddressSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYAddressSubclass.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7A81C08D07D0040D344 /* XPYAddress+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYAddress+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7A91C08D07D0040D344 /* XPYAddress+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYAddress+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7B01C08D09F0040D344 /* XPYPaycoinURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaycoinURL.h; sourceTree = "<group>"; };
+		FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaycoinURL.m; sourceTree = "<group>"; };
+		FFDBB7B81C08D0A80040D344 /* XPYPaycoinURL+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYPaycoinURL+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7B91C08D0A80040D344 /* XPYPaycoinURL+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYPaycoinURL+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7C01C08D0C00040D344 /* XPYPaymentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaymentProtocol.h; sourceTree = "<group>"; };
+		FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaymentProtocol.m; sourceTree = "<group>"; };
+		FFDBB7C81C08D0CC0040D344 /* XPYPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaymentRequest.h; sourceTree = "<group>"; };
+		FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaymentRequest.m; sourceTree = "<group>"; };
+		FFDBB7D91C08D1440040D344 /* XPYAssetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYAssetAddress.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYAssetAddress.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7DB1C08D1440040D344 /* XPYAssetID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYAssetID.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYAssetID.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7DD1C08D1440040D344 /* XPYAssetType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYAssetType.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYAssetType.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7F71C08D1890040D344 /* XPYBlockchainInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBlockchainInfo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBlockchainInfo.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB7F91C08D1890040D344 /* XPYBlockchainInfo+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYBlockchainInfo+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB7FA1C08D1890040D344 /* XPYBlockchainInfo+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYBlockchainInfo+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB80B1C08D1B00040D344 /* XPYChainCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYChainCom.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYChainCom.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB8151C08D1D20040D344 /* XPYCurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYCurrencyConverter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYCurrencyConverter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB81F1C08D1D90040D344 /* XPYCurrencyConverter+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYCurrencyConverter+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB8201C08D1D90040D344 /* XPYCurrencyConverter+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYCurrencyConverter+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB8291C08D1FF0040D344 /* XPYNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYNumberFormatter.h; sourceTree = "<group>"; };
+		FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYNumberFormatter.m; sourceTree = "<group>"; };
+		FFDBB8331C08D20A0040D344 /* XPYPriceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPriceSource.h; sourceTree = "<group>"; };
+		FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPriceSource.m; sourceTree = "<group>"; };
+		FFDBB8351C08D20A0040D344 /* XPYPriceSource+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYPriceSource+Tests.h"; sourceTree = "<group>"; };
+		FFDBB8361C08D20A0040D344 /* XPYPriceSource+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYPriceSource+Tests.m"; sourceTree = "<group>"; };
+		FFDBB8471C08D2570040D344 /* XPYEncryptedBackup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYEncryptedBackup.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYEncryptedBackup.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB8491C08D2570040D344 /* XPYEncryptedBackup+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYEncryptedBackup+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB84A1C08D2570040D344 /* XPYEncryptedBackup+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYEncryptedBackup+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB84B1C08D2570040D344 /* XPYEncryptedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYEncryptedMessage.h; sourceTree = "<group>"; };
+		FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYEncryptedMessage.m; sourceTree = "<group>"; };
+		FFDBB84D1C08D2570040D344 /* XPYEncryptedMessage+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYEncryptedMessage+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB84E1C08D2570040D344 /* XPYEncryptedMessage+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYEncryptedMessage+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB86F1C08D2890040D344 /* XPYBlindSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBlindSignature.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBlindSignature.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB8711C08D28A0040D344 /* XPYBlindSignature+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYBlindSignature+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFDBB8721C08D28A0040D344 /* XPYBlindSignature+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYBlindSignature+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFDBB8831C08D2930040D344 /* XPYFancyEncryptedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYFancyEncryptedMessage.h; sourceTree = "<group>"; };
+		FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYFancyEncryptedMessage.m; sourceTree = "<group>"; };
+		FFDBB8851C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYFancyEncryptedMessage+Tests.h"; sourceTree = "<group>"; };
+		FFDBB8861C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYFancyEncryptedMessage+Tests.m"; sourceTree = "<group>"; };
+		FFDBB89A1C08E2850040D344 /* CorePaycoinOSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CorePaycoinOSX-Prefix.pch"; path = "CorePaycoinOSX/CorePaycoinOSX-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FFDBB89B1C08E2850040D344 /* CorePaycoinOSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CorePaycoinOSX-Info.plist"; path = "CorePaycoinOSX/CorePaycoinOSX-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FFDBB8A11C08E2BA0040D344 /* CorePaycoinOSXlib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CorePaycoinOSXlib-Prefix.pch"; path = "CorePaycoinOSXlib/CorePaycoinOSXlib-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FFDBB8A21C08E2CD0040D344 /* CorePaycoinIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CorePaycoinIOS-Prefix.pch"; path = "CorePaycoinIOS/CorePaycoinIOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FFDBB8A31C08E2CD0040D344 /* CorePaycoinIOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CorePaycoinIOS-Info.plist"; path = "CorePaycoinIOS/CorePaycoinIOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FFDBB8A91C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CorePaycoinIOSlib-Prefix.pch"; path = "CorePaycoinIOSlib/CorePaycoinIOSlib-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		FFDBB8AD1C08E5030040D344 /* XPY256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPY256Tests.swift; path = CorePaycoinTestsOSX/XPY256Tests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8AE1C08E5030040D344 /* XPYAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYAddressTests.swift; path = CorePaycoinTestsOSX/XPYAddressTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8AF1C08E5030040D344 /* XPYBitcoinURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYBitcoinURLTests.swift; path = CorePaycoinTestsOSX/XPYBitcoinURLTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B01C08E5030040D344 /* XPYBlindSignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYBlindSignatureTests.swift; path = CorePaycoinTestsOSX/XPYBlindSignatureTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B11C08E5030040D344 /* XPYBlockchainInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYBlockchainInfoTests.swift; path = CorePaycoinTestsOSX/XPYBlockchainInfoTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B21C08E5030040D344 /* XPYCurrencyConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYCurrencyConverterTests.swift; path = CorePaycoinTestsOSX/XPYCurrencyConverterTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B31C08E5030040D344 /* XPYCurvePointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYCurvePointTests.swift; path = CorePaycoinTestsOSX/XPYCurvePointTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B41C08E5030040D344 /* XPYDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYDataTests.swift; path = CorePaycoinTestsOSX/XPYDataTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B51C08E5030040D344 /* XPYEncryptedBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = XPYEncryptedBackupTests.swift; path = CorePaycoinTestsOSX/XPYEncryptedBackupTests.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FFDBB8B61C08E5030040D344 /* XPYFancyEncryptedMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XPYFancyEncryptedMessageTests.swift; path = CorePaycoinTestsOSX/XPYFancyEncryptedMessageTests.swift; sourceTree = SOURCE_ROOT; };
+		FFDBB8B71C08E5030040D344 /* XPYKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XPYKeyTests.swift; path = CorePaycoinTestsOSX/XPYKeyTests.swift; sourceTree = SOURCE_ROOT; };
+		FFDBB8B81C08E5030040D344 /* XPYPaymentProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XPYPaymentProtocolTests.swift; path = CorePaycoinTestsOSX/XPYPaymentProtocolTests.swift; sourceTree = SOURCE_ROOT; };
+		FFDBB8B91C08E5030040D344 /* XPYPriceSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XPYPriceSourceTests.swift; path = CorePaycoinTestsOSX/XPYPriceSourceTests.swift; sourceTree = SOURCE_ROOT; };
+		FFDBB8C71C08E5180040D344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CorePaycoinTestsOSX/Info.plist; sourceTree = SOURCE_ROOT; };
+		FFDBB8C81C0928850040D344 /* XPYPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaymentMethod.h; sourceTree = "<group>"; };
+		FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaymentMethod.m; sourceTree = "<group>"; };
+		FFDBB8CA1C0928850040D344 /* XPYPaymentMethodDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaymentMethodDetails.h; sourceTree = "<group>"; };
+		FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaymentMethodDetails.m; sourceTree = "<group>"; };
+		FFDBB8CC1C0928850040D344 /* XPYPaymentMethodRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPaymentMethodRequest.h; sourceTree = "<group>"; };
+		FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPaymentMethodRequest.m; sourceTree = "<group>"; };
+		FFDBB8E61C0941AE0040D344 /* update_headers.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = update_headers.rb; sourceTree = SOURCE_ROOT; };
+		FFDBB8E91C0941BC0040D344 /* build_libraries.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_libraries.sh; sourceTree = SOURCE_ROOT; };
+		FFFC77F71C063925005C1BB5 /* CorePaycoin.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; lineEnding = 0; path = CorePaycoin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
+		FFFC77F81C063C99005C1BB5 /* XPYErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYErrors.h; sourceTree = "<group>"; };
+		FFFC77F91C063C99005C1BB5 /* XPYErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYErrors.m; sourceTree = "<group>"; };
+		FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NS+XPYBase58.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78191C063DC3005C1BB5 /* NS+XPYBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NS+XPYBase58.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC781F1C063DFB005C1BB5 /* NSData+XPYData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+XPYData.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+XPYData.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78291C063E2D005C1BB5 /* XPYData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC782A1C063E2D005C1BB5 /* XPYData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78331C063E59005C1BB5 /* XPYData+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYData+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYData+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC783D1C063E69005C1BB5 /* XPYHashID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYHashID.h; sourceTree = "<group>"; };
+		FFFC783E1C063E69005C1BB5 /* XPYHashID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYHashID.m; sourceTree = "<group>"; };
+		FFFC78471C063E81005C1BB5 /* XPYBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBase58.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78481C063E81005C1BB5 /* XPYBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBase58.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78511C063E88005C1BB5 /* XPYBase58+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYBase58+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYBase58+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC785B1C063E9A005C1BB5 /* XPYProtocolSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYProtocolSerialization.h; sourceTree = "<group>"; };
+		FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYProtocolSerialization.m; sourceTree = "<group>"; };
+		FFFC78651C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYProtocolSerialization+Tests.h"; sourceTree = "<group>"; };
+		FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYProtocolSerialization+Tests.m"; sourceTree = "<group>"; };
+		FFFC786F1C063EAF005C1BB5 /* XPYProtocolBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYProtocolBuffers.h; sourceTree = "<group>"; };
+		FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYProtocolBuffers.m; sourceTree = "<group>"; };
+		FFFC78791C063EC5005C1BB5 /* XPYQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYQRCode.h; sourceTree = "<group>"; };
+		FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYQRCode.m; sourceTree = "<group>"; };
+		FFFC78831C0640CA005C1BB5 /* XPY256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPY256.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78841C0640CA005C1BB5 /* XPY256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPY256.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC788D1C0640D0005C1BB5 /* XPY256+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPY256+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC788E1C0640D0005C1BB5 /* XPY256+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPY256+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78971C064110005C1BB5 /* XPYBigNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYBigNumber.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78981C064110005C1BB5 /* XPYBigNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYBigNumber.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78A11C06411C005C1BB5 /* XPYBigNumber+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYBigNumber+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78A21C06411C005C1BB5 /* XPYBigNumber+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYBigNumber+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78AB1C064126005C1BB5 /* XPYCurvePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XPYCurvePoint.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = XPYCurvePoint.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78B51C06412B005C1BB5 /* XPYCurvePoint+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "XPYCurvePoint+Tests.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FFFC78B61C06412B005C1BB5 /* XPYCurvePoint+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "XPYCurvePoint+Tests.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FFFC78BF1C064137005C1BB5 /* XPYKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYKey.h; sourceTree = "<group>"; };
+		FFFC78C01C064137005C1BB5 /* XPYKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYKey.m; sourceTree = "<group>"; };
+		FFFC78C91C06413C005C1BB5 /* XPYKey+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYKey+Tests.h"; sourceTree = "<group>"; };
+		FFFC78CA1C06413C005C1BB5 /* XPYKey+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYKey+Tests.m"; sourceTree = "<group>"; };
+		FFFC78D31C064142005C1BB5 /* XPYKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYKeychain.h; sourceTree = "<group>"; };
+		FFFC78D41C064142005C1BB5 /* XPYKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYKeychain.m; sourceTree = "<group>"; };
+		FFFC78DD1C064147005C1BB5 /* XPYKeychain+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYKeychain+Tests.h"; sourceTree = "<group>"; };
+		FFFC78DE1C064147005C1BB5 /* XPYKeychain+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYKeychain+Tests.m"; sourceTree = "<group>"; };
+		FFFC78E71C064151005C1BB5 /* XPYMnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYMnemonic.h; sourceTree = "<group>"; };
+		FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYMnemonic.m; sourceTree = "<group>"; };
+		FFFC78F11C064159005C1BB5 /* XPYMnemonic+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYMnemonic+Tests.h"; sourceTree = "<group>"; };
+		FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPYMnemonic+Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20148ADC18355D7200E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C0DDB2183BC5E100A9EED0 /* libcrypto-ios.a in Frameworks */,
+				20148AE018355D7200E68E9C /* Foundation.framework in Frameworks */,
+				20C0DDB3183BC5E100A9EED0 /* libssl-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C001835638200E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C0DDB5183BC5E200A9EED0 /* libssl-ios.a in Frameworks */,
+				20C0DDB4183BC5E200A9EED0 /* libcrypto-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C98183643AB00E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20148C9C183643AB00E68E9C /* Cocoa.framework in Frameworks */,
+				20C0DDB7183BC5E900A9EED0 /* libssl-osx.a in Frameworks */,
+				20C0DDB6183BC5E900A9EED0 /* libcrypto-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B010F183547C200878B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209F27C11AE538F80092A1FB /* Security.framework in Frameworks */,
+				20C0DDB8183BC5EA00A9EED0 /* libcrypto-osx.a in Frameworks */,
+				20C0DDB9183BC5EA00A9EED0 /* libssl-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5A17B8FF47005AC9E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C3F16917BFDCF8009DB89C /* libSystem.dylib in Frameworks */,
+				20C0DDBB183BC5EB00A9EED0 /* libssl-osx.a in Frameworks */,
+				20C0DDBA183BC5EB00A9EED0 /* libcrypto-osx.a in Frameworks */,
+				2084DD5E17B8FF47005AC9E6 /* Foundation.framework in Frameworks */,
+				2084DD9817B8FFA2005AC9E6 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24121B03F1BF0084A9DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757B241B1B03F1BF0084A9DE /* CorePaycoinOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20148AE118355D7200E68E9C /* CorePaycoinIOSlib */ = {
+			isa = PBXGroup;
+			children = (
+				20148AE218355D7200E68E9C /* Supporting Files */,
+			);
+			name = CorePaycoinIOSlib;
+			path = CoreBitcoinIOSlib;
+			sourceTree = "<group>";
+		};
+		20148AE218355D7200E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8A91C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20148B3918355F0100E68E9C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20148B3A18355F0100E68E9C /* Foundation.framework */,
+				20148B3B18355F0100E68E9C /* CoreData.framework */,
+				20148B3C18355F0100E68E9C /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		20148C051835638200E68E9C /* CorePaycoinIOS */ = {
+			isa = PBXGroup;
+			children = (
+				20148C061835638200E68E9C /* Supporting Files */,
+			);
+			name = CorePaycoinIOS;
+			path = CoreBitcoinIOS;
+			sourceTree = "<group>";
+		};
+		20148C061835638200E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8A21C08E2CD0040D344 /* CorePaycoinIOS-Prefix.pch */,
+				FFDBB8A31C08E2CD0040D344 /* CorePaycoinIOS-Info.plist */,
+				20148C081835638200E68E9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20148C9D183643AB00E68E9C /* CorePaycoinOSXlib */ = {
+			isa = PBXGroup;
+			children = (
+				20148C9E183643AB00E68E9C /* Supporting Files */,
+			);
+			name = CorePaycoinOSXlib;
+			path = CoreBitcoinOSXlib;
+			sourceTree = SOURCE_ROOT;
+		};
+		20148C9E183643AB00E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8A11C08E2BA0040D344 /* CorePaycoinOSXlib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		205D8B8D1B16017700F9EA4E /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				FFFC78831C0640CA005C1BB5 /* XPY256.h */,
+				FFFC78841C0640CA005C1BB5 /* XPY256.m */,
+				FFFC788D1C0640D0005C1BB5 /* XPY256+Tests.h */,
+				FFFC788E1C0640D0005C1BB5 /* XPY256+Tests.m */,
+				FFFC78971C064110005C1BB5 /* XPYBigNumber.h */,
+				FFFC78981C064110005C1BB5 /* XPYBigNumber.m */,
+				FFFC78A11C06411C005C1BB5 /* XPYBigNumber+Tests.h */,
+				FFFC78A21C06411C005C1BB5 /* XPYBigNumber+Tests.m */,
+				FFFC78AB1C064126005C1BB5 /* XPYCurvePoint.h */,
+				FFFC78AC1C064126005C1BB5 /* XPYCurvePoint.m */,
+				FFFC78B51C06412B005C1BB5 /* XPYCurvePoint+Tests.h */,
+				FFFC78B61C06412B005C1BB5 /* XPYCurvePoint+Tests.m */,
+				FFFC78BF1C064137005C1BB5 /* XPYKey.h */,
+				FFFC78C01C064137005C1BB5 /* XPYKey.m */,
+				FFFC78C91C06413C005C1BB5 /* XPYKey+Tests.h */,
+				FFFC78CA1C06413C005C1BB5 /* XPYKey+Tests.m */,
+				FFFC78D31C064142005C1BB5 /* XPYKeychain.h */,
+				FFFC78D41C064142005C1BB5 /* XPYKeychain.m */,
+				FFFC78DD1C064147005C1BB5 /* XPYKeychain+Tests.h */,
+				FFFC78DE1C064147005C1BB5 /* XPYKeychain+Tests.m */,
+				FFFC78E71C064151005C1BB5 /* XPYMnemonic.h */,
+				FFFC78E81C064151005C1BB5 /* XPYMnemonic.m */,
+				FFFC78F11C064159005C1BB5 /* XPYMnemonic+Tests.h */,
+				FFFC78F21C064159005C1BB5 /* XPYMnemonic+Tests.m */,
+			);
+			name = Crypto;
+			sourceTree = "<group>";
+		};
+		205D8B8E1B16018900F9EA4E /* Payment Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB79A1C08D0710040D344 /* XPYAddress.h */,
+				FFDBB79B1C08D0710040D344 /* XPYAddress.m */,
+				FFDBB7A41C08D0750040D344 /* XPYAddressSubclass.h */,
+				FFDBB7A81C08D07D0040D344 /* XPYAddress+Tests.h */,
+				FFDBB7A91C08D07D0040D344 /* XPYAddress+Tests.m */,
+				FFDBB7B01C08D09F0040D344 /* XPYPaycoinURL.h */,
+				FFDBB7B11C08D09F0040D344 /* XPYPaycoinURL.m */,
+				FFDBB7B81C08D0A80040D344 /* XPYPaycoinURL+Tests.h */,
+				FFDBB7B91C08D0A80040D344 /* XPYPaycoinURL+Tests.m */,
+				FFDBB7C01C08D0C00040D344 /* XPYPaymentProtocol.h */,
+				FFDBB7C11C08D0C00040D344 /* XPYPaymentProtocol.m */,
+				FFDBB7C81C08D0CC0040D344 /* XPYPaymentRequest.h */,
+				FFDBB7C91C08D0CC0040D344 /* XPYPaymentRequest.m */,
+				205D8BD61B176DF300F9EA4E /* Payment Methods */,
+			);
+			name = "Payment Protocols";
+			sourceTree = "<group>";
+		};
+		205D8B8F1B1601AA00F9EA4E /* Open Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB7DD1C08D1440040D344 /* XPYAssetType.h */,
+				FFDBB7DE1C08D1440040D344 /* XPYAssetType.m */,
+				FFDBB7DB1C08D1440040D344 /* XPYAssetID.h */,
+				FFDBB7DC1C08D1440040D344 /* XPYAssetID.m */,
+				FFDBB7D91C08D1440040D344 /* XPYAssetAddress.h */,
+				FFDBB7DA1C08D1440040D344 /* XPYAssetAddress.m */,
+			);
+			name = "Open Assets";
+			sourceTree = "<group>";
+		};
+		205D8B901B16021200F9EA4E /* Data Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				FFFC78291C063E2D005C1BB5 /* XPYData.h */,
+				FFFC782A1C063E2D005C1BB5 /* XPYData.m */,
+				FFFC783D1C063E69005C1BB5 /* XPYHashID.h */,
+				FFFC783E1C063E69005C1BB5 /* XPYHashID.m */,
+				FFFC781F1C063DFB005C1BB5 /* NSData+XPYData.h */,
+				FFFC78201C063DFB005C1BB5 /* NSData+XPYData.m */,
+				FFFC78331C063E59005C1BB5 /* XPYData+Tests.h */,
+				FFFC78341C063E59005C1BB5 /* XPYData+Tests.m */,
+				FFFC78471C063E81005C1BB5 /* XPYBase58.h */,
+				FFFC78481C063E81005C1BB5 /* XPYBase58.m */,
+				FFFC78191C063DC3005C1BB5 /* NS+XPYBase58.h */,
+				FFFC78131C063DAD005C1BB5 /* NS+XPYBase58.m */,
+				FFFC78511C063E88005C1BB5 /* XPYBase58+Tests.h */,
+				FFFC78521C063E88005C1BB5 /* XPYBase58+Tests.m */,
+				FFFC785B1C063E9A005C1BB5 /* XPYProtocolSerialization.h */,
+				FFFC785C1C063E9A005C1BB5 /* XPYProtocolSerialization.m */,
+				FFFC78651C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h */,
+				FFFC78661C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m */,
+				FFFC786F1C063EAF005C1BB5 /* XPYProtocolBuffers.h */,
+				FFFC78701C063EAF005C1BB5 /* XPYProtocolBuffers.m */,
+				FFFC78791C063EC5005C1BB5 /* XPYQRCode.h */,
+				FFFC787A1C063EC5005C1BB5 /* XPYQRCode.m */,
+			);
+			name = "Data Encoding";
+			sourceTree = "<group>";
+		};
+		205D8B911B16026B00F9EA4E /* Crypto Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8471C08D2570040D344 /* XPYEncryptedBackup.h */,
+				FFDBB8481C08D2570040D344 /* XPYEncryptedBackup.m */,
+				FFDBB8491C08D2570040D344 /* XPYEncryptedBackup+Tests.h */,
+				FFDBB84A1C08D2570040D344 /* XPYEncryptedBackup+Tests.m */,
+				FFDBB84B1C08D2570040D344 /* XPYEncryptedMessage.h */,
+				FFDBB84C1C08D2570040D344 /* XPYEncryptedMessage.m */,
+				FFDBB84D1C08D2570040D344 /* XPYEncryptedMessage+Tests.h */,
+				FFDBB84E1C08D2570040D344 /* XPYEncryptedMessage+Tests.m */,
+				FFDBB86F1C08D2890040D344 /* XPYBlindSignature.h */,
+				FFDBB8701C08D28A0040D344 /* XPYBlindSignature.m */,
+				FFDBB8711C08D28A0040D344 /* XPYBlindSignature+Tests.h */,
+				FFDBB8721C08D28A0040D344 /* XPYBlindSignature+Tests.m */,
+				FFDBB8831C08D2930040D344 /* XPYFancyEncryptedMessage.h */,
+				FFDBB8841C08D2930040D344 /* XPYFancyEncryptedMessage.m */,
+				FFDBB8851C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.h */,
+				FFDBB8861C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.m */,
+			);
+			name = "Crypto Protocols";
+			sourceTree = "<group>";
+		};
+		205D8B921B1602B200F9EA4E /* Core Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB6E51C08CAE10040D344 /* XPYUnitsAndLimits.h */,
+				FFDBB6E91C08CAFB0040D344 /* XPYBlockHeader.h */,
+				FFDBB6EA1C08CAFB0040D344 /* XPYBlockHeader.m */,
+				FFDBB6F31C08CB030040D344 /* XPYBlock.h */,
+				FFDBB6F41C08CB030040D344 /* XPYBlock.m */,
+				FFDBB6FD1C08CB1F0040D344 /* XPYMerkleTree.h */,
+				FFDBB6FE1C08CB1F0040D344 /* XPYMerkleTree.m */,
+				FFDBB7071C08CB260040D344 /* XPYMerkleTree+Tests.h */,
+				FFDBB7081C08CB260040D344 /* XPYMerkleTree+Tests.m */,
+				FFDBB7111C08CB350040D344 /* XPYOpcode.h */,
+				FFDBB7121C08CB350040D344 /* XPYOpcode.m */,
+				FFDBB7391C08CB7A0040D344 /* XPYSignatureHashType.h */,
+				FFDBB71B1C08CB450040D344 /* XPYScript.h */,
+				FFDBB71C1C08CB450040D344 /* XPYScript.m */,
+				FFDBB72F1C08CB650040D344 /* XPYScript+Tests.h */,
+				FFDBB7301C08CB650040D344 /* XPYScript+Tests.m */,
+				FFDBB7251C08CB510040D344 /* XPYScriptMachine.h */,
+				FFDBB7261C08CB510040D344 /* XPYScriptMachine.m */,
+				FFDBB73D1C08CB8C0040D344 /* XPYTransaction.h */,
+				FFDBB73E1C08CB8C0040D344 /* XPYTransaction.m */,
+				FFDBB7451C08CB930040D344 /* XPYTransaction+Tests.h */,
+				FFDBB7461C08CB930040D344 /* XPYTransaction+Tests.m */,
+				FFDBB7571C08CBAB0040D344 /* XPYTransactionInput.h */,
+				FFDBB7581C08CBAB0040D344 /* XPYTransactionInput.m */,
+				FFDBB7611C08CBB30040D344 /* XPYTransactionOutput.h */,
+				FFDBB7621C08CBB30040D344 /* XPYTransactionOutput.m */,
+				FFDBB76B1C08CBC00040D344 /* XPYOutpoint.h */,
+				FFDBB76C1C08CBC00040D344 /* XPYOutpoint.m */,
+				FFDBB74D1C08CB9F0040D344 /* XPYTransactionBuilder.h */,
+				FFDBB74E1C08CB9F0040D344 /* XPYTransactionBuilder.m */,
+				FFDBB7751C08CBCB0040D344 /* XPYNetwork.h */,
+				FFDBB7761C08CBCB0040D344 /* XPYNetwork.m */,
+				FFDBB77F1C08CBDA0040D344 /* XPYProcessor.h */,
+				FFDBB7801C08CBDA0040D344 /* XPYProcessor.m */,
+			);
+			name = "Core Data Structures";
+			sourceTree = "<group>";
+		};
+		205D8B931B1602E200F9EA4E /* Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8151C08D1D20040D344 /* XPYCurrencyConverter.h */,
+				FFDBB8161C08D1D20040D344 /* XPYCurrencyConverter.m */,
+				FFDBB81F1C08D1D90040D344 /* XPYCurrencyConverter+Tests.h */,
+				FFDBB8201C08D1D90040D344 /* XPYCurrencyConverter+Tests.m */,
+				FFDBB8291C08D1FF0040D344 /* XPYNumberFormatter.h */,
+				FFDBB82A1C08D1FF0040D344 /* XPYNumberFormatter.m */,
+				FFDBB8331C08D20A0040D344 /* XPYPriceSource.h */,
+				FFDBB8341C08D20A0040D344 /* XPYPriceSource.m */,
+				FFDBB8351C08D20A0040D344 /* XPYPriceSource+Tests.h */,
+				FFDBB8361C08D20A0040D344 /* XPYPriceSource+Tests.m */,
+			);
+			name = Currencies;
+			sourceTree = "<group>";
+		};
+		205D8B941B16031F00F9EA4E /* Third Party Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB7F71C08D1890040D344 /* XPYBlockchainInfo.h */,
+				FFDBB7F81C08D1890040D344 /* XPYBlockchainInfo.m */,
+				FFDBB7F91C08D1890040D344 /* XPYBlockchainInfo+Tests.h */,
+				FFDBB7FA1C08D1890040D344 /* XPYBlockchainInfo+Tests.m */,
+				FFDBB80B1C08D1B00040D344 /* XPYChainCom.h */,
+				FFDBB80C1C08D1B00040D344 /* XPYChainCom.m */,
+			);
+			name = "Third Party Sources";
+			sourceTree = "<group>";
+		};
+		205D8BD61B176DF300F9EA4E /* Payment Methods */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8C81C0928850040D344 /* XPYPaymentMethod.h */,
+				FFDBB8C91C0928850040D344 /* XPYPaymentMethod.m */,
+				FFDBB8CA1C0928850040D344 /* XPYPaymentMethodDetails.h */,
+				FFDBB8CB1C0928850040D344 /* XPYPaymentMethodDetails.m */,
+				FFDBB8CC1C0928850040D344 /* XPYPaymentMethodRequest.h */,
+				FFDBB8CD1C0928850040D344 /* XPYPaymentMethodRequest.m */,
+			);
+			name = "Payment Methods";
+			sourceTree = "<group>";
+		};
+		206B011A183547C200878B8D /* CorePaycoinOSX */ = {
+			isa = PBXGroup;
+			children = (
+				206B011B183547C200878B8D /* Supporting Files */,
+			);
+			name = CorePaycoinOSX;
+			path = CoreBitcoinOSX;
+			sourceTree = "<group>";
+		};
+		206B011B183547C200878B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB89A1C08E2850040D344 /* CorePaycoinOSX-Prefix.pch */,
+				FFDBB89B1C08E2850040D344 /* CorePaycoinOSX-Info.plist */,
+				206B011D183547C200878B8D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2084DD5F17B8FF47005AC9E6 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2084DD6017B8FF47005AC9E6 /* main.m */,
+				2084DD6317B8FF47005AC9E6 /* UnitTests-Prefix.pch */,
+				2084DD6217B8FF47005AC9E6 /* Transactions */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		2084DD6217B8FF47005AC9E6 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Transactions;
+			sourceTree = "<group>";
+		};
+		2084DD9917B8FFB0005AC9E6 /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */,
+				20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */,
+				20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */,
+				20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */,
+				2084DD9A17B90081005AC9E6 /* openssl */,
+			);
+			name = OpenSSL;
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		20D09B9D18BA130600794209 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20D09B9E18BA144C00794209 /* .gitignore */,
+				2084DD9F17B90174005AC9E6 /* update_openssl.sh */,
+				FFDBB8E61C0941AE0040D344 /* update_headers.rb */,
+				FFDBB8E91C0941BC0040D344 /* build_libraries.sh */,
+				20D09BBA18BA29BB00794209 /* postprocess_openssl_includes_in_framework.rb */,
+			);
+			name = Utils;
+			path = CoreBitcoin;
+			sourceTree = "<group>";
+		};
+		20D2801917B8FE00004A462B = {
+			isa = PBXGroup;
+			children = (
+				2084DD9417B8FF7E005AC9E6 /* README.md */,
+				20A443D21AC941F7008B3447 /* ReleaseNotes.md */,
+				2039DB0117E2ED2B0051177B /* GLOSSARY.md */,
+				20203ADD19F66B6E0085C01F /* MEME_GLOSSARY.md */,
+				209818911839688D00541747 /* LICENSE.txt */,
+				2039DB0217E2ED7F0051177B /* ScriptStringRepresentation.md */,
+				FFFC77F71C063925005C1BB5 /* CorePaycoin.podspec */,
+				20D2802717B8FE00004A462B /* CorePaycoin */,
+				2084DD9917B8FFB0005AC9E6 /* OpenSSL */,
+				20D09B9D18BA130600794209 /* Utils */,
+				2084DD5F17B8FF47005AC9E6 /* UnitTests */,
+				206B011A183547C200878B8D /* CorePaycoinOSX */,
+				20148C9D183643AB00E68E9C /* CorePaycoinOSXlib */,
+				20148C051835638200E68E9C /* CorePaycoinIOS */,
+				20148AE118355D7200E68E9C /* CorePaycoinIOSlib */,
+				757B24161B03F1BF0084A9DE /* CorePaycoinTestsOSX */,
+				20D2802417B8FE00004A462B /* Frameworks */,
+				20D2802317B8FE00004A462B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20D2802317B8FE00004A462B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2084DD5D17B8FF47005AC9E6 /* UnitTests */,
+				206B0113183547C200878B8D /* CorePaycoinOSX.framework */,
+				20148ADF18355D7200E68E9C /* libCorePaycoinIOS.a */,
+				20148C031835638200E68E9C /* CorePaycoinIOS.framework */,
+				20148C9B183643AB00E68E9C /* libCorePaycoinOSX.a */,
+				757B24151B03F1BF0084A9DE /* CorePaycoinTestsOSX.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D2802417B8FE00004A462B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20148BFD183562C400E68E9C /* Foundation.framework */,
+				20C3F16817BFDCF8009DB89C /* libSystem.dylib */,
+				2084DD9517B8FFA2005AC9E6 /* libcommonCrypto.dylib */,
+				2084DD9617B8FFA2005AC9E6 /* Security.framework */,
+				20D2802517B8FE00004A462B /* Foundation.framework */,
+				20148B2418355E8F00E68E9C /* CoreFoundation.framework */,
+				20148B3718355F0100E68E9C /* Cocoa.framework */,
+				20148CA8183643AB00E68E9C /* XCTest.framework */,
+				20148B3918355F0100E68E9C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20D2802717B8FE00004A462B /* CorePaycoin */ = {
+			isa = PBXGroup;
+			children = (
+				20D09B9F18BA14F900794209 /* CorePaycoin.h */,
+				20D09BA018BA14F900794209 /* CorePaycoin+Categories.h */,
+				757B24211B03F1E80084A9DE /* SwiftBridgingHeader.h */,
+				FFFC77F81C063C99005C1BB5 /* XPYErrors.h */,
+				FFFC77F91C063C99005C1BB5 /* XPYErrors.m */,
+				205D8B901B16021200F9EA4E /* Data Encoding */,
+				205D8B8D1B16017700F9EA4E /* Crypto */,
+				205D8B921B1602B200F9EA4E /* Core Data Structures */,
+				205D8B8E1B16018900F9EA4E /* Payment Protocols */,
+				205D8B8F1B1601AA00F9EA4E /* Open Assets */,
+				205D8B911B16026B00F9EA4E /* Crypto Protocols */,
+				205D8B931B1602E200F9EA4E /* Currencies */,
+				205D8B941B16031F00F9EA4E /* Third Party Sources */,
+			);
+			path = CorePaycoin;
+			sourceTree = "<group>";
+		};
+		757B24161B03F1BF0084A9DE /* CorePaycoinTestsOSX */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8AD1C08E5030040D344 /* XPY256Tests.swift */,
+				FFDBB8AE1C08E5030040D344 /* XPYAddressTests.swift */,
+				FFDBB8AF1C08E5030040D344 /* XPYBitcoinURLTests.swift */,
+				FFDBB8B01C08E5030040D344 /* XPYBlindSignatureTests.swift */,
+				FFDBB8B11C08E5030040D344 /* XPYBlockchainInfoTests.swift */,
+				FFDBB8B21C08E5030040D344 /* XPYCurrencyConverterTests.swift */,
+				FFDBB8B31C08E5030040D344 /* XPYCurvePointTests.swift */,
+				FFDBB8B41C08E5030040D344 /* XPYDataTests.swift */,
+				FFDBB8B51C08E5030040D344 /* XPYEncryptedBackupTests.swift */,
+				FFDBB8B61C08E5030040D344 /* XPYFancyEncryptedMessageTests.swift */,
+				FFDBB8B71C08E5030040D344 /* XPYKeyTests.swift */,
+				FFDBB8B81C08E5030040D344 /* XPYPaymentProtocolTests.swift */,
+				FFDBB8B91C08E5030040D344 /* XPYPriceSourceTests.swift */,
+				757B24171B03F1BF0084A9DE /* Supporting Files */,
+			);
+			name = CorePaycoinTestsOSX;
+			path = CoreBitcoinTestsOSX;
+			sourceTree = "<group>";
+		};
+		757B24171B03F1BF0084A9DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBB8C71C08E5180040D344 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20148C29183564DE00E68E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFC784A1C063E81005C1BB5 /* XPYBase58.h in Headers */,
+				FFDBB73B1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */,
+				FFDBB8CF1C0928850040D344 /* XPYPaymentMethod.h in Headers */,
+				FFDBB7281C08CB510040D344 /* XPYScriptMachine.h in Headers */,
+				FFDBB7F01C08D1440040D344 /* XPYAssetType.h in Headers */,
+				FFFC78D61C064142005C1BB5 /* XPYKeychain.h in Headers */,
+				20D09BA218BA14F900794209 /* CorePaycoin.h in Headers */,
+				FFFC78401C063E69005C1BB5 /* XPYHashID.h in Headers */,
+				FFDBB8381C08D20A0040D344 /* XPYPriceSource.h in Headers */,
+				FFDBB8881C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */,
+				FFDBB8741C08D28A0040D344 /* XPYBlindSignature.h in Headers */,
+				FFFC78861C0640CA005C1BB5 /* XPY256.h in Headers */,
+				FFFC785E1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */,
+				FFFC77FB1C063C99005C1BB5 /* XPYErrors.h in Headers */,
+				FFDBB75A1C08CBAB0040D344 /* XPYTransactionInput.h in Headers */,
+				FFFC789A1C064110005C1BB5 /* XPYBigNumber.h in Headers */,
+				FFDBB7001C08CB1F0040D344 /* XPYMerkleTree.h in Headers */,
+				FFDBB80E1C08D1B00040D344 /* XPYChainCom.h in Headers */,
+				FFDBB7781C08CBCB0040D344 /* XPYNetwork.h in Headers */,
+				FFFC78361C063E59005C1BB5 /* XPYData+Tests.h in Headers */,
+				FFDBB7E81C08D1440040D344 /* XPYAssetID.h in Headers */,
+				FFDBB7E01C08D1440040D344 /* XPYAssetAddress.h in Headers */,
+				FFDBB6E71C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */,
+				FFDBB8DF1C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */,
+				20D09BA518BA14F900794209 /* CorePaycoin+Categories.h in Headers */,
+				FFDBB7641C08CBB30040D344 /* XPYTransactionOutput.h in Headers */,
+				FFDBB7401C08CB8C0040D344 /* XPYTransaction.h in Headers */,
+				FFDBB7141C08CB350040D344 /* XPYOpcode.h in Headers */,
+				FFDBB7CB1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */,
+				FFDBB8181C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */,
+				FFDBB6EC1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */,
+				FFFC78221C063DFB005C1BB5 /* NSData+XPYData.h in Headers */,
+				FFDBB8D71C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */,
+				FFFC78541C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */,
+				FFDBB7821C08CBDA0040D344 /* XPYProcessor.h in Headers */,
+				FFFC782C1C063E2D005C1BB5 /* XPYData.h in Headers */,
+				FFDBB8601C08D2570040D344 /* XPYEncryptedMessage.h in Headers */,
+				FFFC781B1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */,
+				FFDBB8AB1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */,
+				FFFC787C1C063EC5005C1BB5 /* XPYQRCode.h in Headers */,
+				FFFC78C21C064137005C1BB5 /* XPYKey.h in Headers */,
+				FFDBB7B31C08D09F0040D344 /* XPYPaycoinURL.h in Headers */,
+				FFFC78EA1C064151005C1BB5 /* XPYMnemonic.h in Headers */,
+				FFFC78AE1C064126005C1BB5 /* XPYCurvePoint.h in Headers */,
+				FFDBB79D1C08D0710040D344 /* XPYAddress.h in Headers */,
+				FFDBB7321C08CB650040D344 /* XPYScript+Tests.h in Headers */,
+				FFDBB6F61C08CB030040D344 /* XPYBlock.h in Headers */,
+				FFDBB7501C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */,
+				FFDBB7FC1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */,
+				FFDBB82C1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */,
+				FFFC78721C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */,
+				FFFC78F41C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */,
+				FFFC78CC1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */,
+				FFDBB7C31C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */,
+				FFDBB8501C08D2570040D344 /* XPYEncryptedBackup.h in Headers */,
+				FFDBB7AB1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */,
+				20148C411835651C00E68E9C /* openssl in Headers */,
+				FFFC78681C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */,
+				FFDBB7A61C08D0750040D344 /* XPYAddressSubclass.h in Headers */,
+				FFDBB71E1C08CB450040D344 /* XPYScript.h in Headers */,
+				FFFC78A41C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C99183643AB00E68E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFC784B1C063E81005C1BB5 /* XPYBase58.h in Headers */,
+				FFDBB73C1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */,
+				FFDBB8D01C0928850040D344 /* XPYPaymentMethod.h in Headers */,
+				FFDBB7291C08CB510040D344 /* XPYScriptMachine.h in Headers */,
+				FFDBB7F11C08D1440040D344 /* XPYAssetType.h in Headers */,
+				FFFC78D71C064142005C1BB5 /* XPYKeychain.h in Headers */,
+				20D09BA318BA14F900794209 /* CorePaycoin.h in Headers */,
+				FFFC78411C063E69005C1BB5 /* XPYHashID.h in Headers */,
+				FFDBB8391C08D20A0040D344 /* XPYPriceSource.h in Headers */,
+				FFDBB8891C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */,
+				FFDBB8751C08D28A0040D344 /* XPYBlindSignature.h in Headers */,
+				FFFC78871C0640CA005C1BB5 /* XPY256.h in Headers */,
+				FFFC785F1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */,
+				FFFC77FC1C063C99005C1BB5 /* XPYErrors.h in Headers */,
+				FFDBB75B1C08CBAB0040D344 /* XPYTransactionInput.h in Headers */,
+				FFFC789B1C064110005C1BB5 /* XPYBigNumber.h in Headers */,
+				FFDBB7011C08CB1F0040D344 /* XPYMerkleTree.h in Headers */,
+				FFDBB80F1C08D1B00040D344 /* XPYChainCom.h in Headers */,
+				FFDBB7791C08CBCB0040D344 /* XPYNetwork.h in Headers */,
+				FFFC78371C063E59005C1BB5 /* XPYData+Tests.h in Headers */,
+				FFDBB7E91C08D1440040D344 /* XPYAssetID.h in Headers */,
+				FFDBB7E11C08D1440040D344 /* XPYAssetAddress.h in Headers */,
+				FFDBB6E81C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */,
+				FFDBB8E01C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */,
+				20D09BA618BA14F900794209 /* CorePaycoin+Categories.h in Headers */,
+				FFDBB7651C08CBB30040D344 /* XPYTransactionOutput.h in Headers */,
+				FFDBB7411C08CB8C0040D344 /* XPYTransaction.h in Headers */,
+				FFDBB7151C08CB350040D344 /* XPYOpcode.h in Headers */,
+				FFDBB7CC1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */,
+				FFDBB8191C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */,
+				FFDBB6ED1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */,
+				FFFC78231C063DFB005C1BB5 /* NSData+XPYData.h in Headers */,
+				FFDBB8D81C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */,
+				FFFC78551C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */,
+				FFDBB7831C08CBDA0040D344 /* XPYProcessor.h in Headers */,
+				FFFC782D1C063E2D005C1BB5 /* XPYData.h in Headers */,
+				FFDBB8611C08D2570040D344 /* XPYEncryptedMessage.h in Headers */,
+				FFFC781C1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */,
+				FFDBB8AC1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */,
+				FFFC787D1C063EC5005C1BB5 /* XPYQRCode.h in Headers */,
+				FFFC78C31C064137005C1BB5 /* XPYKey.h in Headers */,
+				FFDBB7B41C08D09F0040D344 /* XPYPaycoinURL.h in Headers */,
+				FFFC78EB1C064151005C1BB5 /* XPYMnemonic.h in Headers */,
+				FFFC78AF1C064126005C1BB5 /* XPYCurvePoint.h in Headers */,
+				FFDBB79E1C08D0710040D344 /* XPYAddress.h in Headers */,
+				FFDBB7331C08CB650040D344 /* XPYScript+Tests.h in Headers */,
+				FFDBB6F71C08CB030040D344 /* XPYBlock.h in Headers */,
+				FFDBB7511C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */,
+				FFDBB7FD1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */,
+				FFDBB82D1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */,
+				FFFC78731C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */,
+				FFFC78F51C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */,
+				FFFC78CD1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */,
+				FFDBB7C41C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */,
+				FFDBB8511C08D2570040D344 /* XPYEncryptedBackup.h in Headers */,
+				FFDBB7AC1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */,
+				20148CEB1836446500E68E9C /* openssl in Headers */,
+				FFFC78691C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */,
+				FFDBB7A71C08D0750040D344 /* XPYAddressSubclass.h in Headers */,
+				FFDBB71F1C08CB450040D344 /* XPYScript.h in Headers */,
+				FFFC78A51C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B0110183547C200878B8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFC78491C063E81005C1BB5 /* XPYBase58.h in Headers */,
+				FFDBB73A1C08CB7A0040D344 /* XPYSignatureHashType.h in Headers */,
+				FFDBB8CE1C0928850040D344 /* XPYPaymentMethod.h in Headers */,
+				FFDBB7271C08CB510040D344 /* XPYScriptMachine.h in Headers */,
+				FFFC78D51C064142005C1BB5 /* XPYKeychain.h in Headers */,
+				FFDBB7EF1C08D1440040D344 /* XPYAssetType.h in Headers */,
+				20D09BA118BA14F900794209 /* CorePaycoin.h in Headers */,
+				FFFC78851C0640CA005C1BB5 /* XPY256.h in Headers */,
+				FFDBB8371C08D20A0040D344 /* XPYPriceSource.h in Headers */,
+				FFDBB8871C08D2930040D344 /* XPYFancyEncryptedMessage.h in Headers */,
+				FFDBB8731C08D28A0040D344 /* XPYBlindSignature.h in Headers */,
+				FFFC783F1C063E69005C1BB5 /* XPYHashID.h in Headers */,
+				FFFC785D1C063E9A005C1BB5 /* XPYProtocolSerialization.h in Headers */,
+				FFDBB7591C08CBAB0040D344 /* XPYTransactionInput.h in Headers */,
+				FFFC77FA1C063C99005C1BB5 /* XPYErrors.h in Headers */,
+				FFFC78991C064110005C1BB5 /* XPYBigNumber.h in Headers */,
+				FFDBB6FF1C08CB1F0040D344 /* XPYMerkleTree.h in Headers */,
+				FFDBB80D1C08D1B00040D344 /* XPYChainCom.h in Headers */,
+				FFDBB7771C08CBCB0040D344 /* XPYNetwork.h in Headers */,
+				FFFC78351C063E59005C1BB5 /* XPYData+Tests.h in Headers */,
+				FFDBB6E61C08CAE10040D344 /* XPYUnitsAndLimits.h in Headers */,
+				FFDBB7E71C08D1440040D344 /* XPYAssetID.h in Headers */,
+				FFDBB7DF1C08D1440040D344 /* XPYAssetAddress.h in Headers */,
+				FFDBB8DE1C0928850040D344 /* XPYPaymentMethodRequest.h in Headers */,
+				FFDBB7631C08CBB30040D344 /* XPYTransactionOutput.h in Headers */,
+				FFDBB73F1C08CB8C0040D344 /* XPYTransaction.h in Headers */,
+				FFDBB7131C08CB350040D344 /* XPYOpcode.h in Headers */,
+				FFDBB6EB1C08CAFB0040D344 /* XPYBlockHeader.h in Headers */,
+				20D09BA418BA14F900794209 /* CorePaycoin+Categories.h in Headers */,
+				FFDBB8171C08D1D20040D344 /* XPYCurrencyConverter.h in Headers */,
+				FFDBB7CA1C08D0CC0040D344 /* XPYPaymentRequest.h in Headers */,
+				FFFC78211C063DFB005C1BB5 /* NSData+XPYData.h in Headers */,
+				FFDBB8D61C0928850040D344 /* XPYPaymentMethodDetails.h in Headers */,
+				FFDBB7811C08CBDA0040D344 /* XPYProcessor.h in Headers */,
+				FFFC78531C063E88005C1BB5 /* XPYBase58+Tests.h in Headers */,
+				FFFC782B1C063E2D005C1BB5 /* XPYData.h in Headers */,
+				FFDBB85F1C08D2570040D344 /* XPYEncryptedMessage.h in Headers */,
+				FFFC781A1C063DC3005C1BB5 /* NS+XPYBase58.h in Headers */,
+				FFDBB8AA1C08E43B0040D344 /* CorePaycoinIOSlib-Prefix.pch in Headers */,
+				FFFC78C11C064137005C1BB5 /* XPYKey.h in Headers */,
+				FFFC78E91C064151005C1BB5 /* XPYMnemonic.h in Headers */,
+				FFFC787B1C063EC5005C1BB5 /* XPYQRCode.h in Headers */,
+				FFDBB7B21C08D09F0040D344 /* XPYPaycoinURL.h in Headers */,
+				FFFC78AD1C064126005C1BB5 /* XPYCurvePoint.h in Headers */,
+				FFDBB79C1C08D0710040D344 /* XPYAddress.h in Headers */,
+				FFDBB7311C08CB650040D344 /* XPYScript+Tests.h in Headers */,
+				FFDBB6F51C08CB030040D344 /* XPYBlock.h in Headers */,
+				FFDBB74F1C08CB9F0040D344 /* XPYTransactionBuilder.h in Headers */,
+				FFDBB7FB1C08D1890040D344 /* XPYBlockchainInfo.h in Headers */,
+				FFDBB82B1C08D1FF0040D344 /* XPYNumberFormatter.h in Headers */,
+				FFFC78711C063EAF005C1BB5 /* XPYProtocolBuffers.h in Headers */,
+				FFFC78F31C064159005C1BB5 /* XPYMnemonic+Tests.h in Headers */,
+				FFFC78CB1C06413C005C1BB5 /* XPYKey+Tests.h in Headers */,
+				FFDBB7C21C08D0C00040D344 /* XPYPaymentProtocol.h in Headers */,
+				FFDBB84F1C08D2570040D344 /* XPYEncryptedBackup.h in Headers */,
+				FFDBB7AA1C08D07D0040D344 /* XPYAddress+Tests.h in Headers */,
+				206B016A1835487700878B8D /* openssl in Headers */,
+				FFFC78671C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.h in Headers */,
+				FFDBB7A51C08D0750040D344 /* XPYAddressSubclass.h in Headers */,
+				FFDBB71D1C08CB450040D344 /* XPYScript.h in Headers */,
+				FFFC78A31C06411C005C1BB5 /* XPYBigNumber+Tests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20148ADE18355D7200E68E9C /* CorePaycoinIOSlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148AFD18355D7200E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinIOSlib" */;
+			buildPhases = (
+				20148ADB18355D7200E68E9C /* Sources */,
+				20148ADC18355D7200E68E9C /* Frameworks */,
+				20148ADD18355D7200E68E9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePaycoinIOSlib;
+			productName = CoreBitcoinIOSlib;
+			productReference = 20148ADF18355D7200E68E9C /* libCorePaycoinIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		20148C021835638200E68E9C /* CorePaycoinIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148C0C1835638200E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinIOS" */;
+			buildPhases = (
+				20148BFF1835638200E68E9C /* Sources */,
+				20148C001835638200E68E9C /* Frameworks */,
+				20148C011835638200E68E9C /* Resources */,
+				20148C29183564DE00E68E9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePaycoinIOS;
+			productName = CoreBitcoinIOS;
+			productReference = 20148C031835638200E68E9C /* CorePaycoinIOS.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		20148C9A183643AB00E68E9C /* CorePaycoinOSXlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148CBA183643AB00E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinOSXlib" */;
+			buildPhases = (
+				20148C97183643AB00E68E9C /* Sources */,
+				20148C98183643AB00E68E9C /* Frameworks */,
+				20148C99183643AB00E68E9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePaycoinOSXlib;
+			productName = CoreBitcoinOSXlib;
+			productReference = 20148C9B183643AB00E68E9C /* libCorePaycoinOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		206B0112183547C200878B8D /* CorePaycoinOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206B013B183547C300878B8D /* Build configuration list for PBXNativeTarget "CorePaycoinOSX" */;
+			buildPhases = (
+				206B010E183547C200878B8D /* Sources */,
+				206B010F183547C200878B8D /* Frameworks */,
+				206B0110183547C200878B8D /* Headers */,
+				206B0111183547C200878B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorePaycoinOSX;
+			productName = CoreBitcoinOSX;
+			productReference = 206B0113183547C200878B8D /* CorePaycoinOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2084DD5C17B8FF47005AC9E6 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2084DD6617B8FF47005AC9E6 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				2084DD5917B8FF47005AC9E6 /* Sources */,
+				2084DD5A17B8FF47005AC9E6 /* Frameworks */,
+				2084DD5B17B8FF47005AC9E6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 2084DD5D17B8FF47005AC9E6 /* UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
+		757B24141B03F1BF0084A9DE /* CorePaycoinTestsOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757B24201B03F1BF0084A9DE /* Build configuration list for PBXNativeTarget "CorePaycoinTestsOSX" */;
+			buildPhases = (
+				757B24111B03F1BF0084A9DE /* Sources */,
+				757B24121B03F1BF0084A9DE /* Frameworks */,
+				757B24131B03F1BF0084A9DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				757B241D1B03F1BF0084A9DE /* PBXTargetDependency */,
+			);
+			name = CorePaycoinTestsOSX;
+			productName = CoreBitcoinTestsOSX;
+			productReference = 757B24151B03F1BF0084A9DE /* CorePaycoinTestsOSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D2801A17B8FE00004A462B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oleg Andreev";
+				TargetAttributes = {
+					757B24141B03F1BF0084A9DE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 20D2801D17B8FE00004A462B /* Build configuration list for PBXProject "CorePaycoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20D2801917B8FE00004A462B;
+			productRefGroup = 20D2802317B8FE00004A462B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2084DD5C17B8FF47005AC9E6 /* UnitTests */,
+				206B0112183547C200878B8D /* CorePaycoinOSX */,
+				20148ADE18355D7200E68E9C /* CorePaycoinIOSlib */,
+				20148C021835638200E68E9C /* CorePaycoinIOS */,
+				20148C9A183643AB00E68E9C /* CorePaycoinOSXlib */,
+				757B24141B03F1BF0084A9DE /* CorePaycoinTestsOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20148C011835638200E68E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20148C0A1835638200E68E9C /* InfoPlist.strings in Resources */,
+				FFDBB8EB1C0941BC0040D344 /* build_libraries.sh in Resources */,
+				FFDBB8E81C0941AE0040D344 /* update_headers.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B0111183547C200878B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206B011F183547C200878B8D /* InfoPlist.strings in Resources */,
+				FFDBB8EC1C0943C80040D344 /* InfoPlist.strings in Resources */,
+				FFDBB8EA1C0941BC0040D344 /* build_libraries.sh in Resources */,
+				FFDBB8E71C0941AE0040D344 /* update_headers.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24131B03F1BF0084A9DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20148ADB18355D7200E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB7EC1C08D1440040D344 /* XPYAssetID.m in Sources */,
+				FFFC78301C063E2D005C1BB5 /* XPYData.m in Sources */,
+				FFDBB8641C08D2570040D344 /* XPYEncryptedMessage.m in Sources */,
+				FFDBB7171C08CB350040D344 /* XPYOpcode.m in Sources */,
+				FFDBB7031C08CB1F0040D344 /* XPYMerkleTree.m in Sources */,
+				FFDBB8D31C0928850040D344 /* XPYPaymentMethod.m in Sources */,
+				FFFC788A1C0640CA005C1BB5 /* XPY256.m in Sources */,
+				FFDBB7531C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */,
+				FFDBB72B1C08CB510040D344 /* XPYScriptMachine.m in Sources */,
+				FFFC78801C063EC5005C1BB5 /* XPYQRCode.m in Sources */,
+				FFDBB7CF1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */,
+				FFDBB7211C08CB450040D344 /* XPYScript.m in Sources */,
+				FFDBB77B1C08CBCB0040D344 /* XPYNetwork.m in Sources */,
+				FFFC784E1C063E81005C1BB5 /* XPYBase58.m in Sources */,
+				FFDBB7711C08CBC00040D344 /* XPYOutpoint.m in Sources */,
+				FFDBB8DB1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */,
+				FFDBB7D51C08D0F80040D344 /* XPYPaycoinURL.m in Sources */,
+				FFDBB88C1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */,
+				FFDBB7F41C08D1440040D344 /* XPYAssetType.m in Sources */,
+				FFFC786C1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */,
+				FFDBB8301C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */,
+				FFDBB83C1C08D20A0040D344 /* XPYPriceSource.m in Sources */,
+				FFFC78621C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */,
+				FFDBB7851C08CBDA0040D344 /* XPYProcessor.m in Sources */,
+				FFDBB8E31C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */,
+				FFDBB7921C08CCF30040D344 /* XPYTransaction.m in Sources */,
+				FFDBB7671C08CBB30040D344 /* XPYTransactionOutput.m in Sources */,
+				FFDBB6EF1C08CAFB0040D344 /* XPYBlockHeader.m in Sources */,
+				FFFC78161C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */,
+				FFFC78761C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */,
+				FFDBB75D1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */,
+				FFFC78C61C064137005C1BB5 /* XPYKey.m in Sources */,
+				FFDBB7E41C08D1440040D344 /* XPYAssetAddress.m in Sources */,
+				FFFC783A1C063E59005C1BB5 /* XPYData+Tests.m in Sources */,
+				FFFC78441C063E69005C1BB5 /* XPYHashID.m in Sources */,
+				FFFC78EE1C064151005C1BB5 /* XPYMnemonic.m in Sources */,
+				FFFC78B21C064126005C1BB5 /* XPYCurvePoint.m in Sources */,
+				FFDBB8001C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */,
+				FFDBB7A01C08D0710040D344 /* XPYAddress.m in Sources */,
+				FFFC78DA1C064142005C1BB5 /* XPYKeychain.m in Sources */,
+				FFDBB8121C08D1B00040D344 /* XPYChainCom.m in Sources */,
+				FFFC78261C063DFB005C1BB5 /* NSData+XPYData.m in Sources */,
+				FFFC789E1C064110005C1BB5 /* XPYBigNumber.m in Sources */,
+				FFDBB7D81C08D10F0040D344 /* XPYPaymentProtocol.m in Sources */,
+				FFDBB6F91C08CB030040D344 /* XPYBlock.m in Sources */,
+				FFFC781E1C063DE2005C1BB5 /* XPYErrors.m in Sources */,
+				FFDBB8541C08D2570040D344 /* XPYEncryptedBackup.m in Sources */,
+				FFDBB81C1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */,
+				FFFC78F81C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */,
+				FFDBB8781C08D28A0040D344 /* XPYBlindSignature.m in Sources */,
+				FFFC78581C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148BFF1835638200E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB7ED1C08D1440040D344 /* XPYAssetID.m in Sources */,
+				FFFC78311C063E2D005C1BB5 /* XPYData.m in Sources */,
+				FFDBB8651C08D2570040D344 /* XPYEncryptedMessage.m in Sources */,
+				FFDBB7181C08CB350040D344 /* XPYOpcode.m in Sources */,
+				FFDBB7861C08CBDA0040D344 /* XPYProcessor.m in Sources */,
+				FFDBB8D41C0928850040D344 /* XPYPaymentMethod.m in Sources */,
+				FFDBB7431C08CB8C0040D344 /* XPYTransaction.m in Sources */,
+				FFDBB7681C08CBB30040D344 /* XPYTransactionOutput.m in Sources */,
+				FFDBB7041C08CB1F0040D344 /* XPYMerkleTree.m in Sources */,
+				FFFC788B1C0640CA005C1BB5 /* XPY256.m in Sources */,
+				FFDBB72C1C08CB510040D344 /* XPYScriptMachine.m in Sources */,
+				FFDBB7C61C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */,
+				FFFC78811C063EC5005C1BB5 /* XPYQRCode.m in Sources */,
+				FFDBB7221C08CB450040D344 /* XPYScript.m in Sources */,
+				FFFC784F1C063E81005C1BB5 /* XPYBase58.m in Sources */,
+				FFDBB8DC1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */,
+				FFDBB7B61C08D09F0040D344 /* XPYPaycoinURL.m in Sources */,
+				FFDBB88D1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */,
+				FFDBB7F51C08D1440040D344 /* XPYAssetType.m in Sources */,
+				FFFC786D1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */,
+				FFDBB8311C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */,
+				FFDBB83D1C08D20A0040D344 /* XPYPriceSource.m in Sources */,
+				FFDBB7541C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */,
+				FFDBB77C1C08CBCB0040D344 /* XPYNetwork.m in Sources */,
+				FFDBB8E41C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */,
+				FFFC78631C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */,
+				FFDBB6F01C08CAFB0040D344 /* XPYBlockHeader.m in Sources */,
+				FFFC78771C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */,
+				FFFC78171C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */,
+				FFFC78C71C064137005C1BB5 /* XPYKey.m in Sources */,
+				FFFC783B1C063E59005C1BB5 /* XPYData+Tests.m in Sources */,
+				FFDBB7E51C08D1440040D344 /* XPYAssetAddress.m in Sources */,
+				FFFC78451C063E69005C1BB5 /* XPYHashID.m in Sources */,
+				FFFC78EF1C064151005C1BB5 /* XPYMnemonic.m in Sources */,
+				FFDBB7721C08CBC00040D344 /* XPYOutpoint.m in Sources */,
+				FFFC78B31C064126005C1BB5 /* XPYCurvePoint.m in Sources */,
+				FFDBB75E1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */,
+				FFDBB8011C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */,
+				FFDBB7A11C08D0710040D344 /* XPYAddress.m in Sources */,
+				FFFC78DB1C064142005C1BB5 /* XPYKeychain.m in Sources */,
+				FFDBB8131C08D1B00040D344 /* XPYChainCom.m in Sources */,
+				FFFC78271C063DFB005C1BB5 /* NSData+XPYData.m in Sources */,
+				FFDBB7D01C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */,
+				FFFC789F1C064110005C1BB5 /* XPYBigNumber.m in Sources */,
+				FFDBB6FA1C08CB030040D344 /* XPYBlock.m in Sources */,
+				FFFC77FE1C063C99005C1BB5 /* XPYErrors.m in Sources */,
+				FFDBB8551C08D2570040D344 /* XPYEncryptedBackup.m in Sources */,
+				FFDBB81D1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */,
+				FFFC78F91C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */,
+				FFDBB8791C08D28A0040D344 /* XPYBlindSignature.m in Sources */,
+				FFFC78591C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C97183643AB00E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB7EE1C08D1440040D344 /* XPYAssetID.m in Sources */,
+				FFFC78321C063E2D005C1BB5 /* XPYData.m in Sources */,
+				FFDBB8661C08D2570040D344 /* XPYEncryptedMessage.m in Sources */,
+				FFDBB7191C08CB350040D344 /* XPYOpcode.m in Sources */,
+				FFDBB7871C08CBDA0040D344 /* XPYProcessor.m in Sources */,
+				FFDBB8D51C0928850040D344 /* XPYPaymentMethod.m in Sources */,
+				FFDBB7441C08CB8C0040D344 /* XPYTransaction.m in Sources */,
+				FFDBB7691C08CBB30040D344 /* XPYTransactionOutput.m in Sources */,
+				FFDBB7051C08CB1F0040D344 /* XPYMerkleTree.m in Sources */,
+				FFFC788C1C0640CA005C1BB5 /* XPY256.m in Sources */,
+				FFDBB72D1C08CB510040D344 /* XPYScriptMachine.m in Sources */,
+				FFDBB7C71C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */,
+				FFFC78821C063EC5005C1BB5 /* XPYQRCode.m in Sources */,
+				FFDBB7231C08CB450040D344 /* XPYScript.m in Sources */,
+				FFFC78501C063E81005C1BB5 /* XPYBase58.m in Sources */,
+				FFDBB8DD1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */,
+				FFDBB7B71C08D09F0040D344 /* XPYPaycoinURL.m in Sources */,
+				FFDBB88E1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */,
+				FFDBB7F61C08D1440040D344 /* XPYAssetType.m in Sources */,
+				FFFC786E1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */,
+				FFDBB8321C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */,
+				FFDBB83E1C08D20A0040D344 /* XPYPriceSource.m in Sources */,
+				FFDBB7551C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */,
+				FFDBB77D1C08CBCB0040D344 /* XPYNetwork.m in Sources */,
+				FFDBB8E51C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */,
+				FFFC78641C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */,
+				FFDBB6F11C08CAFB0040D344 /* XPYBlockHeader.m in Sources */,
+				FFFC78781C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */,
+				FFFC78181C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */,
+				FFFC78C81C064137005C1BB5 /* XPYKey.m in Sources */,
+				FFFC783C1C063E59005C1BB5 /* XPYData+Tests.m in Sources */,
+				FFDBB7E61C08D1440040D344 /* XPYAssetAddress.m in Sources */,
+				FFFC78461C063E69005C1BB5 /* XPYHashID.m in Sources */,
+				FFFC78F01C064151005C1BB5 /* XPYMnemonic.m in Sources */,
+				FFDBB7731C08CBC00040D344 /* XPYOutpoint.m in Sources */,
+				FFFC78B41C064126005C1BB5 /* XPYCurvePoint.m in Sources */,
+				FFDBB75F1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */,
+				FFDBB8021C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */,
+				FFDBB7A21C08D0710040D344 /* XPYAddress.m in Sources */,
+				FFFC78DC1C064142005C1BB5 /* XPYKeychain.m in Sources */,
+				FFDBB8141C08D1B00040D344 /* XPYChainCom.m in Sources */,
+				FFFC78281C063DFB005C1BB5 /* NSData+XPYData.m in Sources */,
+				FFDBB7D11C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */,
+				FFFC78A01C064110005C1BB5 /* XPYBigNumber.m in Sources */,
+				FFDBB6FB1C08CB030040D344 /* XPYBlock.m in Sources */,
+				FFFC77FF1C063C99005C1BB5 /* XPYErrors.m in Sources */,
+				FFDBB8561C08D2570040D344 /* XPYEncryptedBackup.m in Sources */,
+				FFDBB81E1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */,
+				FFFC78FA1C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */,
+				FFDBB87A1C08D28A0040D344 /* XPYBlindSignature.m in Sources */,
+				FFFC785A1C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B010E183547C200878B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB7EB1C08D1440040D344 /* XPYAssetID.m in Sources */,
+				FFFC782F1C063E2D005C1BB5 /* XPYData.m in Sources */,
+				FFDBB8631C08D2570040D344 /* XPYEncryptedMessage.m in Sources */,
+				FFDBB7161C08CB350040D344 /* XPYOpcode.m in Sources */,
+				FFDBB7841C08CBDA0040D344 /* XPYProcessor.m in Sources */,
+				FFDBB8D21C0928850040D344 /* XPYPaymentMethod.m in Sources */,
+				FFDBB7421C08CB8C0040D344 /* XPYTransaction.m in Sources */,
+				FFDBB7661C08CBB30040D344 /* XPYTransactionOutput.m in Sources */,
+				FFDBB7021C08CB1F0040D344 /* XPYMerkleTree.m in Sources */,
+				FFFC78891C0640CA005C1BB5 /* XPY256.m in Sources */,
+				FFDBB72A1C08CB510040D344 /* XPYScriptMachine.m in Sources */,
+				FFDBB7C51C08D0C00040D344 /* XPYPaymentProtocol.m in Sources */,
+				FFFC787F1C063EC5005C1BB5 /* XPYQRCode.m in Sources */,
+				FFDBB7201C08CB450040D344 /* XPYScript.m in Sources */,
+				FFFC784D1C063E81005C1BB5 /* XPYBase58.m in Sources */,
+				FFDBB8DA1C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */,
+				FFDBB7B51C08D09F0040D344 /* XPYPaycoinURL.m in Sources */,
+				FFDBB88B1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */,
+				FFDBB7F31C08D1440040D344 /* XPYAssetType.m in Sources */,
+				FFFC786B1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */,
+				FFDBB82F1C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */,
+				FFDBB83B1C08D20A0040D344 /* XPYPriceSource.m in Sources */,
+				FFDBB7521C08CB9F0040D344 /* XPYTransactionBuilder.m in Sources */,
+				FFDBB77A1C08CBCB0040D344 /* XPYNetwork.m in Sources */,
+				FFDBB8E21C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */,
+				FFDBB6EE1C08CAFB0040D344 /* XPYBlockHeader.m in Sources */,
+				FFFC78611C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */,
+				FFFC78751C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */,
+				FFFC78C51C064137005C1BB5 /* XPYKey.m in Sources */,
+				FFFC78151C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */,
+				FFFC78391C063E59005C1BB5 /* XPYData+Tests.m in Sources */,
+				FFDBB7701C08CBC00040D344 /* XPYOutpoint.m in Sources */,
+				FFDBB7E31C08D1440040D344 /* XPYAssetAddress.m in Sources */,
+				FFFC78ED1C064151005C1BB5 /* XPYMnemonic.m in Sources */,
+				FFFC78B11C064126005C1BB5 /* XPYCurvePoint.m in Sources */,
+				FFFC78431C063E69005C1BB5 /* XPYHashID.m in Sources */,
+				FFDBB75C1C08CBAB0040D344 /* XPYTransactionInput.m in Sources */,
+				FFDBB7FF1C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */,
+				FFDBB79F1C08D0710040D344 /* XPYAddress.m in Sources */,
+				FFFC78D91C064142005C1BB5 /* XPYKeychain.m in Sources */,
+				FFDBB8111C08D1B00040D344 /* XPYChainCom.m in Sources */,
+				FFFC78251C063DFB005C1BB5 /* NSData+XPYData.m in Sources */,
+				FFDBB7CE1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */,
+				FFDBB6F81C08CB030040D344 /* XPYBlock.m in Sources */,
+				FFFC789D1C064110005C1BB5 /* XPYBigNumber.m in Sources */,
+				FFFC77FD1C063C99005C1BB5 /* XPYErrors.m in Sources */,
+				FFDBB8531C08D2570040D344 /* XPYEncryptedBackup.m in Sources */,
+				FFDBB81B1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */,
+				FFFC78F71C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */,
+				FFDBB8771C08D28A0040D344 /* XPYBlindSignature.m in Sources */,
+				FFFC78571C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5917B8FF47005AC9E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB85A1C08D2570040D344 /* XPYEncryptedBackup+Tests.m in Sources */,
+				FFFC78741C063EAF005C1BB5 /* XPYProtocolBuffers.m in Sources */,
+				FFDBB86A1C08D2570040D344 /* XPYEncryptedMessage+Tests.m in Sources */,
+				FFDBB7E21C08D1440040D344 /* XPYAssetAddress.m in Sources */,
+				FFDBB7D61C08D1040040D344 /* XPYPaycoinURL+Tests.m in Sources */,
+				FFDBB7891C08CC300040D344 /* XPYBlockHeader.m in Sources */,
+				FFDBB7F21C08D1440040D344 /* XPYAssetType.m in Sources */,
+				FFDBB87E1C08D28A0040D344 /* XPYBlindSignature+Tests.m in Sources */,
+				FFDBB82E1C08D1FF0040D344 /* XPYNumberFormatter.m in Sources */,
+				2084DD6117B8FF47005AC9E6 /* main.m in Sources */,
+				FFFC78CE1C06413C005C1BB5 /* XPYKey+Tests.m in Sources */,
+				FFDBB7951C08CD2E0040D344 /* XPYTransactionOutput.m in Sources */,
+				FFFC78F61C064159005C1BB5 /* XPYMnemonic+Tests.m in Sources */,
+				FFFC782E1C063E2D005C1BB5 /* XPYData.m in Sources */,
+				FFFC78881C0640CA005C1BB5 /* XPY256.m in Sources */,
+				FFDBB7931C08CD050040D344 /* XPYTransaction+Tests.m in Sources */,
+				FFDBB7CD1C08D0CC0040D344 /* XPYPaymentRequest.m in Sources */,
+				FFFC78921C0640D0005C1BB5 /* XPY256+Tests.m in Sources */,
+				FFFC78C41C064137005C1BB5 /* XPYKey.m in Sources */,
+				FFDBB8621C08D2570040D344 /* XPYEncryptedMessage.m in Sources */,
+				FFDBB7941C08CD210040D344 /* XPYTransactionInput.m in Sources */,
+				FFDBB8521C08D2570040D344 /* XPYEncryptedBackup.m in Sources */,
+				FFDBB78C1C08CC570040D344 /* XPYMerkleTree+Tests.m in Sources */,
+				FFDBB8061C08D18A0040D344 /* XPYBlockchainInfo+Tests.m in Sources */,
+				FFFC78381C063E59005C1BB5 /* XPYData+Tests.m in Sources */,
+				FFDBB7D21C08D0D40040D344 /* XPYAddress.m in Sources */,
+				FFFC78421C063E69005C1BB5 /* XPYHashID.m in Sources */,
+				FFFC784C1C063E81005C1BB5 /* XPYBase58.m in Sources */,
+				FFDBB83A1C08D20A0040D344 /* XPYPriceSource.m in Sources */,
+				FFFC78B01C064126005C1BB5 /* XPYCurvePoint.m in Sources */,
+				FFDBB88A1C08D2930040D344 /* XPYFancyEncryptedMessage.m in Sources */,
+				FFDBB78F1C08CCCD0040D344 /* XPYScript+Tests.m in Sources */,
+				FFDBB7961C08CD2E0040D344 /* XPYOutpoint.m in Sources */,
+				FFDBB78D1C08CC940040D344 /* XPYOpcode.m in Sources */,
+				FFFC789C1C064110005C1BB5 /* XPYBigNumber.m in Sources */,
+				FFDBB78A1C08CC370040D344 /* XPYBlock.m in Sources */,
+				FFDBB7981C08CD2E0040D344 /* XPYNetwork.m in Sources */,
+				FFFC78EC1C064151005C1BB5 /* XPYMnemonic.m in Sources */,
+				FFDBB78B1C08CC440040D344 /* XPYMerkleTree.m in Sources */,
+				FFFC78BA1C06412B005C1BB5 /* XPYCurvePoint+Tests.m in Sources */,
+				FFDBB7FE1C08D18A0040D344 /* XPYBlockchainInfo.m in Sources */,
+				FFDBB7D41C08D0F70040D344 /* XPYPaycoinURL.m in Sources */,
+				FFDBB7971C08CD2E0040D344 /* XPYTransactionBuilder.m in Sources */,
+				FFDBB8421C08D20A0040D344 /* XPYPriceSource+Tests.m in Sources */,
+				FFFC78241C063DFB005C1BB5 /* NSData+XPYData.m in Sources */,
+				FFFC786A1C063EA1005C1BB5 /* XPYProtocolSerialization+Tests.m in Sources */,
+				FFDBB81A1C08D1D20040D344 /* XPYCurrencyConverter.m in Sources */,
+				FFFC78141C063DAD005C1BB5 /* NS+XPYBase58.m in Sources */,
+				FFFC787E1C063EC5005C1BB5 /* XPYQRCode.m in Sources */,
+				FFDBB7991C08CD2E0040D344 /* XPYProcessor.m in Sources */,
+				FFFC781D1C063DE1005C1BB5 /* XPYErrors.m in Sources */,
+				FFDBB78E1C08CCBC0040D344 /* XPYScript.m in Sources */,
+				FFDBB7D31C08D0E90040D344 /* XPYAddress+Tests.m in Sources */,
+				FFDBB7911C08CCF20040D344 /* XPYTransaction.m in Sources */,
+				FFFC78A61C06411C005C1BB5 /* XPYBigNumber+Tests.m in Sources */,
+				FFDBB7EA1C08D1440040D344 /* XPYAssetID.m in Sources */,
+				FFDBB8D11C0928850040D344 /* XPYPaymentMethod.m in Sources */,
+				FFFC78D81C064142005C1BB5 /* XPYKeychain.m in Sources */,
+				FFDBB8E11C0928850040D344 /* XPYPaymentMethodRequest.m in Sources */,
+				FFFC78E21C064147005C1BB5 /* XPYKeychain+Tests.m in Sources */,
+				FFDBB8761C08D28A0040D344 /* XPYBlindSignature.m in Sources */,
+				FFFC78601C063E9A005C1BB5 /* XPYProtocolSerialization.m in Sources */,
+				FFFC78561C063E88005C1BB5 /* XPYBase58+Tests.m in Sources */,
+				FFDBB8101C08D1B00040D344 /* XPYChainCom.m in Sources */,
+				FFDBB8921C08D2930040D344 /* XPYFancyEncryptedMessage+Tests.m in Sources */,
+				FFDBB8D91C0928850040D344 /* XPYPaymentMethodDetails.m in Sources */,
+				FFDBB8241C08D1D90040D344 /* XPYCurrencyConverter+Tests.m in Sources */,
+				FFDBB7901C08CCE20040D344 /* XPYScriptMachine.m in Sources */,
+				FFDBB7D71C08D10E0040D344 /* XPYPaymentProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24111B03F1BF0084A9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDBB8C41C08E5030040D344 /* XPYKeyTests.swift in Sources */,
+				FFDBB8BA1C08E5030040D344 /* XPY256Tests.swift in Sources */,
+				FFDBB8BC1C08E5030040D344 /* XPYBitcoinURLTests.swift in Sources */,
+				FFDBB8C31C08E5030040D344 /* XPYFancyEncryptedMessageTests.swift in Sources */,
+				FFDBB8C51C08E5030040D344 /* XPYPaymentProtocolTests.swift in Sources */,
+				FFDBB8C21C08E5030040D344 /* XPYEncryptedBackupTests.swift in Sources */,
+				FFDBB8C01C08E5030040D344 /* XPYCurvePointTests.swift in Sources */,
+				FFDBB8BE1C08E5030040D344 /* XPYBlockchainInfoTests.swift in Sources */,
+				FFDBB8BD1C08E5030040D344 /* XPYBlindSignatureTests.swift in Sources */,
+				FFDBB8BF1C08E5030040D344 /* XPYCurrencyConverterTests.swift in Sources */,
+				FFDBB8C11C08E5030040D344 /* XPYDataTests.swift in Sources */,
+				FFDBB8C61C08E5030040D344 /* XPYPriceSourceTests.swift in Sources */,
+				FFDBB8BB1C08E5030040D344 /* XPYAddressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		757B241D1B03F1BF0084A9DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206B0112183547C200878B8D /* CorePaycoinOSX */;
+			targetProxy = 757B241C1B03F1BF0084A9DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20148C081835638200E68E9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20148C091835638200E68E9C /* en */,
+			);
+			name = InfoPlist.strings;
+			path = CorePaycoinIOS;
+			sourceTree = "<group>";
+		};
+		206B011D183547C200878B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206B011E183547C200878B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			path = CorePaycoinOSX;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20148AFE18355D7200E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/CorePaycoinIOSlib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinIOSlib/CorePaycoinIOSlib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CorePaycoinIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		20148AFF18355D7200E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/CorePaycoinIOSlib.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinIOSlib/CorePaycoinIOSlib-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CorePaycoinIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20148C0D1835638200E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinIOS/CorePaycoinIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CorePaycoinIOS/CorePaycoinIOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		20148C0E1835638200E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinIOS/CorePaycoinIOS-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CorePaycoinIOS/CorePaycoinIOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		20148CB6183643AB00E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinOSXlib/CorePaycoinOSXlib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CorePaycoinOSX;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+			};
+			name = Debug;
+		};
+		20148CB7183643AB00E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinOSXlib/CorePaycoinOSXlib-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CorePaycoinOSX;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+			};
+			name = Release;
+		};
+		206B0137183547C300878B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinOSX/CorePaycoinOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CorePaycoinOSX/CorePaycoinOSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		206B0138183547C300878B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CorePaycoinOSX/CorePaycoinOSX-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CorePaycoinOSX/CorePaycoinOSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		2084DD6717B8FF47005AC9E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2084DD6817B8FF47005AC9E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20D2802E17B8FE00004A462B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = build;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.6.2;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/openssl/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/openssl/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = CorePaycoin/SwiftBridgingHeader.h;
+			};
+			name = Debug;
+		};
+		20D2802F17B8FE00004A462B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = build;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 0.6.2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/openssl/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/openssl/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = CorePaycoin/SwiftBridgingHeader.h;
+			};
+			name = Release;
+		};
+		757B241E1B03F1BF0084A9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/openssl/include",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = CorePaycoinTestsOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/openssl/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CorePaycoin/SwiftBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		757B241F1B03F1BF0084A9DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/openssl/include",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = CorePaycoinTestsOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/openssl/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CorePaycoin/SwiftBridgingHeader.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20148AFD18355D7200E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinIOSlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148AFE18355D7200E68E9C /* Debug */,
+				20148AFF18355D7200E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20148C0C1835638200E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148C0D1835638200E68E9C /* Debug */,
+				20148C0E1835638200E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20148CBA183643AB00E68E9C /* Build configuration list for PBXNativeTarget "CorePaycoinOSXlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148CB6183643AB00E68E9C /* Debug */,
+				20148CB7183643AB00E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206B013B183547C300878B8D /* Build configuration list for PBXNativeTarget "CorePaycoinOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206B0137183547C300878B8D /* Debug */,
+				206B0138183547C300878B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2084DD6617B8FF47005AC9E6 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2084DD6717B8FF47005AC9E6 /* Debug */,
+				2084DD6817B8FF47005AC9E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D2801D17B8FE00004A462B /* Build configuration list for PBXProject "CorePaycoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D2802E17B8FE00004A462B /* Debug */,
+				20D2802F17B8FE00004A462B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757B24201B03F1BF0084A9DE /* Build configuration list for PBXNativeTarget "CorePaycoinTestsOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757B241E1B03F1BF0084A9DE /* Debug */,
+				757B241F1B03F1BF0084A9DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D2801A17B8FE00004A462B /* Project object */;
+}

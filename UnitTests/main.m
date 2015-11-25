@@ -1,53 +1,53 @@
 #import <Foundation/Foundation.h>
 
-#import "BTC256+Tests.h"
-#import "BTCData+Tests.h"
-#import "BTCMnemonic+Tests.h"
-#import "BTCBigNumber+Tests.h"
-#import "BTCBase58+Tests.h"
-#import "BTCAddress+Tests.h"
-#import "BTCProtocolSerialization+Tests.h"
-#import "BTCKey+Tests.h"
-#import "BTCKeychain+Tests.h"
-#import "BTCCurvePoint+Tests.h"
-#import "BTCBlindSignature+Tests.h"
-#import "BTCEncryptedBackup+Tests.h"
-#import "BTCEncryptedMessage+Tests.h"
-#import "BTCFancyEncryptedMessage+Tests.h"
-#import "BTCScript+Tests.h"
-#import "BTCTransaction+Tests.h"
-#import "BTCBlockchainInfo+Tests.h"
-#import "BTCPriceSource+Tests.h"
-#import "BTCMerkleTree+Tests.h"
-#import "BTCBitcoinURL+Tests.h"
-#import "BTCCurrencyConverter+Tests.h"
+#import "XPY256+Tests.h"
+#import "XPYData+Tests.h"
+#import "XPYMnemonic+Tests.h"
+#import "XPYBigNumber+Tests.h"
+#import "XPYBase58+Tests.h"
+#import "XPYAddress+Tests.h"
+#import "XPYProtocolSerialization+Tests.h"
+#import "XPYKey+Tests.h"
+#import "XPYKeychain+Tests.h"
+#import "XPYCurvePoint+Tests.h"
+#import "XPYBlindSignature+Tests.h"
+#import "XPYEncryptedBackup+Tests.h"
+#import "XPYEncryptedMessage+Tests.h"
+#import "XPYFancyEncryptedMessage+Tests.h"
+#import "XPYScript+Tests.h"
+#import "XPYTransaction+Tests.h"
+#import "XPYBlockchainInfo+Tests.h"
+#import "XPYPriceSource+Tests.h"
+#import "XPYMerkleTree+Tests.h"
+#import "XPYPaycoinURL+Tests.h"
+#import "XPYCurrencyConverter+Tests.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        BTC256RunAllTests();
+        XPY256RunAllTests();
         [NSData runAllTests];
-        [BTCMnemonic runAllTests];
-        [BTCBigNumber runAllTests];
-        BTCBase58RunAllTests();
-        [BTCAddress runAllTests];
-        [BTCProtocolSerialization runAllTests];
-        [BTCKey runAllTests];
-        [BTCCurvePoint runAllTests];
-        [BTCKeychain runAllTests];
-        [BTCBlindSignature runAllTests];
-        [BTCEncryptedBackup runAllTests];
-        [BTCEncryptedMessage runAllTests];
-        [BTCFancyEncryptedMessage runAllTests];
-        [BTCScript runAllTests];
-        [BTCMerkleTree runAllTests];
-        [BTCBlockchainInfo runAllTests];
-        [BTCPriceSource runAllTests];
-        [BTCBitcoinURL runAllTests];
-        [BTCCurrencyConverter runAllTests];
+        [XPYMnemonic runAllTests];
+        [XPYBigNumber runAllTests];
+        XPYBase58RunAllTests();
+        [XPYAddress runAllTests];
+        [XPYProtocolSerialization runAllTests];
+        [XPYKey runAllTests];
+        [XPYCurvePoint runAllTests];
+        [XPYKeychain runAllTests];
+        [XPYBlindSignature runAllTests];
+        [XPYEncryptedBackup runAllTests];
+        [XPYEncryptedMessage runAllTests];
+        [XPYFancyEncryptedMessage runAllTests];
+        [XPYScript runAllTests];
+        [XPYMerkleTree runAllTests];
+        [XPYBlockchainInfo runAllTests];
+        [XPYPriceSource runAllTests];
+        [XPYPaycoinURL runAllTests];
+        [XPYCurrencyConverter runAllTests];
 
-        [BTCTransaction runAllTests]; // has some interactive features to ask for private key
+        [XPYTransaction runAllTests]; // has some interactive features to ask for private key
         NSLog(@"All tests passed.");
     }
     return 0;

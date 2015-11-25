@@ -41,7 +41,7 @@ About
 
 Bitcoin Meme Glossary is made by Oleg Andreev ([oleganza@gmail.com](mailto:oleganza@gmail.com)). Twitter: [@oleganza](http://twitter.com/oleganza).
 
-Send your thanks here: 1CBtcGivXmHQ8ZqdPgeMfcpQNJrqTrSAcG.
+Send your thanks here: 1CXPYGivXmHQ8ZqdPgeMfcpQNJrqTrSAcG.
 
 This glossary is released under [WTFPL](http://www.wtfpl.net). Do what you want with it, but I would appreciate if you give full credit in case you republish it.
 

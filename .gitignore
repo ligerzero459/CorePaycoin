@@ -24,5 +24,5 @@ DerivedData
 # svn & cvs
 .svn
 CVS
-CoreBitcoin.xcodeproj/project.xcworkspace/xcshareddata/
+CorePaycoin.xcodeproj/project.xcworkspace/xcshareddata/
 openssl.bak
